@@ -1,0 +1,177 @@
+{
+  "title": "Overview",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Overview",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Foundation Level Extensions",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "International Software Testing Qualifications Board",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Revision History",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Table of Contents",
+      "page": 4
+    },
+    {
+      "level": "H3",
+      "text": "Acknowledgements",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Introduction to the Foundation Level Extensions",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Introduction to Foundation Level Agile Tester Extension",
+      "page": 7
+    },
+    {
+      "level": "H3",
+      "text": "Overview of the Foundation Level Extension –",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Agile Tester",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Syllabus",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "References",
+      "page": 12
+    }
+  ],
+  "raw_text": [
+    {
+      "page": 1,
+      "text": "Overview \nFoundation Level Extensions \nVersion 1.0 \nInternational Software Testing Qualifications Board \nCopyright Notice \nThis document may be copied in its entirety, or extracts made, if the source is acknowledged. \n"
+    },
+    {
+      "page": 2,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \nCopyright © International Software Testing Qualifications Board (hereinafter called ISTQB®). \nVersion 2014 \nPage 2 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 3,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \nRevision History \nVersion \n0.1 \n0.2 \n0.3 \n0.7 \n0.8 \n1.0 \nDate \n18 JUNE 2013 \n23 JULY 2013 \n6 NOV 2013 \n11 DEC 2013 \n20 DEC 2013 \n31 MAY 2014 \nRemarks \nInitial version \nWG reviewed and confirmed \namended population and diagram \nAmended Business Outcomes and Chapters matching \nWorking group updates on 0.7 \nGA release for Agile Extension \nVersion 2014 \nPage 3 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 4,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \nTable of Contents \nRevision History \n.......................................................................................................................................... \n3 \nTable of Contents \n........................................................................................................................................ \n4 \n1. \n2. \nIntroduction to the Foundation Level Extensions \n............................................................................ \n6 \nIntroduction to Foundation Level Agile Tester Extension \n............................................................... \n7 \n2.1 \nIntended Audience \n2.2  Career Paths for Testers \nLearning Objectives \n2.3 \nEntry Requirements \n2.4 \nStructure and Course Duration\n2.5 \nKeeping It Current\n2.6 \n..................................................................................................................... \n............................................................................................................ \n................................................................................................................... \n................................................................................................................... \n................................................................................................... \n...................................................................................................................... \n7 \n7 \n7 \n8 \n8 \n9 \n3.  Overview of the Foundation Level Extension – Agile Tester Syllabus\n......................................... \n10 \n3.1 \n3.2  Content\nBusiness Outcomes \n................................................................................................................. \n.................................................................................................................................... \n10 \n10 \n4.  References \n.......................................................................................................................................... \n12 \nTrademarks \n4.1 \n4.2  Documents and Web Sites\n............................................................................................................................. \n....................................................................................................... \n12 \n12 \nVersion 2014 \nPage 4 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 5,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \nAcknowledgements \nThis document was produced by a team from the International Software Testing Qualifications Board \nFoundation Level Working Group. \nThe Agile Extension team thanks the review team and the National Boards for their suggestions and input. \nAt the time the Foundation Level Agile Extension Syllabus was completed, the Agile Extension Working \nGroup had the following membership: Rex Black (Chair), Bertrand Cornanguer (Vice Chair), Gerry \nColeman (Learning Objectives Lead), Debra Friedenberg (Exam Lead), Alon Linetzki (Business Outcomes \nand Marketing Lead), Tauhida Parveen (Editor), and Leo van der Aalst (Development Lead). \nAuthors: Rex Black, Anders Claesson, Gerry Coleman, Bertrand Cornanguer, Istvan Forgacs, Alon \nLinetzki, Tilo Linz, Leo van der Aalst, Marie Walsh, and Stephan Weber. \nInternal Reviewers: Mette Bruhn-Pedersen, Christopher Clements, Alessandro Collino, Debra \nFriedenberg, Kari Kakkonen, Beata Karpinska, Sammy Kolluru, Jennifer Leger, Thomas Mueller, Tuula \nPääkkönen, Meile Posthuma, Gabor Puhalla, Lloyd Roden, Marko Rytkönen, Monika Stoecklein-Olsen, \nRobert Treffny, Chris Van Bael, and Erik van Veenendaal. \nThe team thanks also the following persons, from the National Boards and the Agile expert community, \nwho participated in reviewing, commenting, and balloting of the Foundation Agile Extension Syllabus: Dani \nAlmog, Richard Berns, Stephen Bird, Monika Bögge, Afeng Chai, Josephine Crawford, Tibor Csöndes, \nHuba Demeter, Arnaud Foucal, Cyril Fumery, Kobi Halperin, Inga Hansen, Hanne Hinz, Jidong Hu, Phill \nIsles, Shirley Itah, Martin Klonk, Kjell Lauren, Igal Levi, Rik Marselis, Johan Meivert, Armin Metzger, Peter \nMorgan, Ninna Morin, Ingvar Nordstrom, Chris O’Dea, Klaus Olsen, Ismo Paukamainen, Nathalie Phung, \nHelmut Pichler, Salvatore Reale, Stuart Reid, Hans Rombouts, Petri Säilynoja, Soile Sainio, Lars-Erik \nSandberg, Dakar Shalom,  Jian Shen, Marco Sogliani, Lucjan Stapp, Yaron Tsubery, Sabine Uhde, \nStephanie Ulrich, Tommi Välimäki, Jurian Van de Laar, Marnix Van den Ent, António Vieira Melo, Wenye \nXu, Ester Zabar, Wenqiang Zheng, Peter Zimmerer, Stevan Zivanovic, and Terry Zuo. \nThis document was formally approved for release by the General Assembly of the ISTQB® on May 31, \n2014. \nVersion 2014 \nPage 5 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 6,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \n1.  Introduction to the Foundation Level Extensions \nThis  overview  document  is  intended  for  anyone  with  an  interest  in  the  ISTQB  Foundation  Level \nExtensions who wants a high-level introduction to the leading principles and an overview of the individual \nextension syllabi. \nFrom  time  to  time,  ISTQB  will  update  this  document  to  reflect  any  additional  extensions  that  shall  be \nintroduced  for  the  Foundation  Level,  or  to  reflect  major  changes  in  existing  ones.  Publications  of  the \nupdated document will be available on the ISTQB website. \nThe ISTQB Foundation and Advanced Level syllabi have been defined and have been on the market for \nsome  time.  New  topics  emerge  due  to  technology  and  methodology  changes  in  the  market  which  often \nare brought into the ISTQB program as new Expert Level syllabi. However, not all topics are suited for the \nExpert Level.  For this reason, the extension syllabi are established at the Foundation Level to expand the \nISTQB  program  to  incorporate  new  or  updated  knowledge.  New  extensions  shall  be  discussed  and \nintroduced by the ISTQB periodically. Extensions may be established at the Advanced Level  as well, but \nthat is beyond the scope of this document. \nThe following Foundation Level Extension syllabus has been released: \n  Agile Tester \nIn this document, each Foundation Level Extension syllabus is summarized and the associated Business \nOutcomes are stated.  The Business Outcomes communicate what can be expected from a person who \nachieves  a  Foundation  Level  Extension Certification in a particular subject  area  (e.g.,  Agile Tester),  and \nwill outline the benefits for companies that are considering the development of specific testing skills at this \nlevel. \nVersion 2014 \nPage 6 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 7,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \n2.  Introduction to Foundation Level Agile Tester Extension \nThe  certification  for  Foundation  Level  Extension  –  Agile  Tester  is  designed  for  professionals  who  are \nworking  within  Agile  environments. \nIt  is  also  for  professionals  who  are  planning  to  start  implementing \nAgile  methods  in  the  near  future,  or  are  working  within  companies  that  plan  to  do  so,  The  certification \nprovides an advantage for those who would like to know the required Agile activities, roles, methods, and \nmethodologies specific to their role. \n2.1  Intended Audience \nThe Foundation Level Extension – Agile Tester qualification is aimed at four main groups of professionals: \n1.  Professionals  who  have  achieved  in-depth  testing  experience  in  traditional  methods  and  would \nlike to get an Agile Tester Certificate. \n2.  Junior  professional  testers  who  are  just  starting  in  the  testing  profession,  have  received  the \nFoundation  Level  certificate,  and  would  like  to  know  more  about  the  tester’s  role  in  an  Agile \nenvironment. \n3.  Professionals  who  are  relatively  new  to  testing  and  are  required  to  implement  test  approaches, \nmethods and techniques in their day to day job in Agile projects. \n4.  Professionals  who  are  experienced  in  their  role  (including  unit  testing)  and  need  more \nunderstanding  and  knowledge  about  how  to  perform  and  manage  testing  on  all  levels  in  Agile \nprojects. \nThese  professionals  include  people  who  are  in  roles  such  as  testers,  test  analysts,  test  engineers,  test \nconsultants, test managers, user acceptance testers, and software developers. \nThis  Foundation  Level  Extension  –  Agile  Tester  certification  may  also  be  appropriate  for  anyone  who \nwants  a  deeper  understanding  of  software  testing  in  the  Agile  world,  such  as  project  managers,  quality \nmanagers,  software  development  managers,  business  analysts, \nIT  directors,  and  management \nconsultants. \n2.2  Career Paths for Testers \nBuilding  on  the  Foundation  Level,  the  Agile  Tester  Extension  supports  the  definition  of  career  paths  for \nprofessional testers.  A person with the Agile Tester  certificate has extended the broad understanding of \ntesting acquired at the Foundation Level to enable him or her to work effectively as a professional tester in \nan Agile project.  \nPeople possessing an ISTQB Foundation Level Extension – Agile Tester certificate may use the Certified \nTester Foundation Level acronym CTFL-AT. \n2.3  Learning Objectives \nIn  general,  the  Foundation  Level syllabus  is  examinable  at  a  K1  level,  i.e.,  the candidate  will  recognize, \nremember and recall terms and concepts stated in the Foundation Level syllabus. \nIn  addition,  all  Foundation  Level  syllabus  learning  objectives  are  examinable  at  the  same  K- level  in  an \nextension exam. \nVersion 2014 \nPage 7 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 8,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \nThat  said,  each  extension  level  exam  focuses  on  the  learning  objectives  defined  in  that  extension \nsyllabus. The relevant learning objectives at K1, K2, and K3 levels are provided at the beginning of each \nchapter within each particular extension syllabus. \n2.4  Entry Requirements \nTo  be  able  to  participate  in  a  Foundation  Level  Extension  –  Agile  Tester  exam,  candidates  must  have \nobtained the ISTQB Foundation Level certificate. \n2.5  Structure and Course Duration \nThe  Foundation  Level  Extension  –  Agile  Tester  syllabus  has  no  shared  or  common  elements  with  the \nFoundation Level syllabus. \nThe syllabi must be taught in the following minimum number of days: \nSyllabus \nBaseline: Foundation \nExtension: Agile Tester \nDays \n3 \n2 \nThe  following  figure  shows  the  structure  of  the  Agile  Tester  Extension  and  its  relationship  to  the \nFoundation Level. \nVersion 2014 \nPage 8 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 9,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \n2.6  Keeping It Current \nThe software industry changes rapidly.  To deal with these changes and to provide the stakeholders with \naccess  to  relevant  and  current  information,  the  ISTQB  working  groups  have  created  links  on  the \nwww.istqb.org web site which refer to supporting documents, changes to standards and new occurrences \nin the industry.  This information is not examinable under this syllabus. \nVersion 2014 \nPage 9 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 10,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \n3.  Overview of the Foundation Level Extension – Agile Tester\nSyllabus \n3.1  Business Outcomes \nThis section lists the Business Outcomes expected of a candidate who has achieved the Foundation Level \nExtension – Agile Tester certification. \nAn Agile Tester can… \nAFM1  Collaborate in a cross-functional Agile team being familiar with principles and basic \npractices of Agile software development. \nAFM2  Adapt existing testing experience and knowledge to Agile values and principles. \nAFM3  Support the Agile team in planning test-related activities. \nAFM4  Apply relevant methods and techniques for testing in an Agile project. \nAFM5  Assist the Agile team in test automation activities. \nAFM6  Assist business stakeholders in defining understandable and testable user stories, \nscenarios, requirements and acceptance criteria as appropriate. \nAFM7  Work and share information with other team members using effective communication \nstyles and channels. \nIn general, a Certified Tester Foundation Level – Agile Tester is expected to have acquired the necessary \nskills to working effectively within an Agile team and environment. \n3.2  Content \nChapter 1: Agile Software Development \n  The tester should remember the basic concept of Agile software development based on the Agile \nManifesto. \n  The  tester  should  understand  the  advantages  of  the  whole-team  approach  and  the  benefits  of \nearly and frequent feedback. \n  The tester should recall Agile software development approaches. \n  The  tester  should  be  able  to  write  testable  user  stories  in  collaboration  with  developers  and \nbusiness representatives. \n  The  tester  should  understand  how  retrospectives  can  be  used  as  a  mechanism  for  process \nimprovement in Agile projects. \n  The tester should understand the use and purpose of continuous integration. \n  The tester should know the differences between iteration and release planning, and how a tester \nadds value in each of these activities. \nVersion 2014 \nPage 10 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 11,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \nChapter 2: Fundamental Agile Testing Principles, Practices, and Processes \n  The  tester should  be  able  to  describe  the  differences between  testing  activities in  Agile  projects \nand non-Agile projects. \n  The  tester  should  be  able  to  describe  how  development  and  testing  activities  are  integrated  in \nAgile projects. \n  The tester should be able to describe the role of independent testing in Agile projects. \n  The tester should be able to describe the tools and techniques used to communicate the status of \ntesting in an Agile project, including test progress and product quality. \n  The tester should be able to describe the process of evolving tests  across multiple iterations and \nexplain why test automation is important to manage regression risk in Agile projects. \n  The tester should understand the skills (people, domain, and testing) of a tester in an Agile team. \n  The tester should be able to understand the role of a tester within an Agile team. \nChapter 3: Agile Testing Methods, Techniques, and Tools \n  The  tester  should  be  able  to  recall  the  concepts  of  test-driven  development,  acceptance  test-\ndriven development, and behavior-driven development. \n  The tester should be able to recall the concepts of the test pyramid. \n  The tester should be able to summarize the testing quadrants and their relationships with testing \nlevels and testing types. \n  For a given Agile project, the tester should be able to work as a tester in a Scrum team. \n  The tester should be able to assess quality risks within an Agile project. \n  The tester should be able to  estimate testing effort based on iteration content and quality risks. \n  The tester should be able to interpret relevant information to support testing activities. \n  The tester should be able to explain to business stakeholders how to define testable acceptance \ncriteria. \n  Given  a  user  story,  the  tester  should  be  able  to  write  acceptance  test-driven  development  test \ncases. \n  For both functional and non-functional behavior, the tester should be able to write test cases using \nblack box test design techniques based on given user stories. \n  The tester should be able to perform exploratory testing to support the testing of an Agile project. \n  The  tester  should  be  able  to  recall  different  tools  available  to  testers  according  to  their  purpose \nand to activities in Agile projects. \nVersion 2014 \nPage 11 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    },
+    {
+      "page": 12,
+      "text": "Overview \nFoundation Level Extension – Agile Tester \nInternational \nSoftware Testing \nQualifications Board \n4.  References \n4.1  Trademarks \nThe following registered trademarks and service marks are used in this document: \nISTQB®  is a registered trademark of the International Software Testing Qualifications Board \n4.2  Documents and Web Sites \nIdentifier \n[ISTQB-Web] \nReference \nWeb site of the International Software Testing Qualifications Board. Refer \nto this website for the latest ISTQB Glossary and Syllabi. (www.istqb.org) \nVersion 2014 \nPage 12 of 12 \nMay 31, 2014 \n© International Software Testing Qualifications Board \n"
+    }
+  ],
+  "tables": [
+    {
+      "page": 3,
+      "index": 0,
+      "data": [
+        [
+          "Version",
+          "Date",
+          "Remarks"
+        ],
+        [
+          "0.1",
+          "18 JUNE 2013",
+          "Initial version"
+        ],
+        [
+          "0.2",
+          "23 JULY 2013",
+          "WG reviewed and confirmed"
+        ],
+        [
+          "0.3",
+          "6 NOV 2013",
+          "amended population and diagram"
+        ],
+        [
+          "0.7",
+          "11 DEC 2013",
+          "Amended Business Outcomes and Chapters matching"
+        ],
+        [
+          "0.8",
+          "20 DEC 2013",
+          "Working group updates on 0.7"
+        ],
+        [
+          "1.0",
+          "31 MAY 2014",
+          "GA release for Agile Extension"
+        ]
+      ]
+    },
+    {
+      "page": 8,
+      "index": 0,
+      "data": [
+        [
+          "Syllabus",
+          "Days"
+        ],
+        [
+          "Baseline: Foundation",
+          "3"
+        ],
+        [
+          "Extension: Agile Tester",
+          "2"
+        ]
+      ]
+    }
+  ],
+  "ocr": []
+}

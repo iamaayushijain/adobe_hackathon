@@ -1,0 +1,1608 @@
+{
+  "pdf_file": "input/file01.pdf",
+  "file_size_mb": 0.18742942810058594,
+  "parsers": {
+    "pdfplumber": {
+      "parser": "pdfplumber",
+      "text_pages": [
+        {
+          "page": 1,
+          "text": "Application form for grant of LTC advance\n1. Name of the Government Servant\nDesignation\n2.\nDate of entering the Central Government\n3.\nService\n4. PAY + SI + NPA\nWhether permanent or temporary\n5.\n6. Hom..."
+        }
+      ],
+      "tables": [
+        {
+          "page": 1,
+          "table_index": 0,
+          "rows": 19,
+          "cols": 6,
+          "sample": [
+            [
+              "1.",
+              "Name of the Government Servant",
+              null,
+              "",
+              null,
+              null
+            ],
+            [
+              "2.",
+              "Designation",
+              null,
+              "",
+              null,
+              null
+            ]
+          ]
+        }
+      ],
+      "chars": [
+        {
+          "page": 1,
+          "text": "A",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 199.86,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "p",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 208.28457300000002,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "p",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 215.413776,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "l",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 222.542979,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "i",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 225.844422,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "c",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 229.087515,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "a",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 235.574868,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "t",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 242.06222100000002,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "i",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 245.94716400000001,
+          "y0": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "o",
+          "fontname": "OIKOMH+Arial,Bold",
+          "size": 11.669999999999959,
+          "x0": 249.24860700000002,
+          "y0": 107.43206999999995
+        }
+      ],
+      "words": [
+        {
+          "page": 1,
+          "text": "Application",
+          "fontname": "",
+          "size": 0,
+          "x0": 199.86,
+          "top": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "form",
+          "fontname": "",
+          "size": 0,
+          "x0": 266.701092,
+          "top": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "for",
+          "fontname": "",
+          "size": 0,
+          "x0": 295.895931,
+          "top": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "grant",
+          "fontname": "",
+          "size": 0,
+          "x0": 314.6904660000001,
+          "top": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "of",
+          "fontname": "",
+          "size": 0,
+          "x0": 347.10155700000007,
+          "top": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "LTC",
+          "fontname": "",
+          "size": 0,
+          "x0": 361.4171460000001,
+          "top": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "advance",
+          "fontname": "",
+          "size": 0,
+          "x0": 387.30704100000014,
+          "top": 107.43206999999995
+        },
+        {
+          "page": 1,
+          "text": "1.",
+          "fontname": "",
+          "size": 0,
+          "x0": 70.02,
+          "top": 137.94264640000006
+        },
+        {
+          "page": 1,
+          "text": "Name",
+          "fontname": "",
+          "size": 0,
+          "x0": 95.9985704,
+          "top": 134.9998376000001
+        },
+        {
+          "page": 1,
+          "text": "of",
+          "fontname": "",
+          "size": 0,
+          "x0": 123.89581316000002,
+          "top": 134.9998376000001
+        }
+      ],
+      "font_info": [
+        {
+          "page": 1,
+          "unique_fonts": [
+            "OIKOMH+Arial,Bold",
+            "OIKPLG+Tahoma-Bold",
+            "OILBGN+Tahoma"
+          ],
+          "font_size_range": [
+            9.744399999999928,
+            11.669999999999959
+          ],
+          "avg_font_size": 9.811908514190053
+        }
+      ],
+      "processing_time": 0.13364100456237793
+    },
+    "pymupdf": {
+      "parser": "pymupdf",
+      "text_pages": [
+        {
+          "page": 1,
+          "text": "Application form for grant of LTC advance \n1. \nName of the Government Servant \n2. \nDesignation \n3. \nDate of entering the Central Government \nService \n4. \nPAY + SI + NPA \n5. \nWhether permanent or tempo..."
+        }
+      ],
+      "text_blocks": [
+        {
+          "page": 1,
+          "text": "Application form for grant of LTC advance ",
+          "font": "Arial,Bold",
+          "size": 11.670000076293945,
+          "flags": 20,
+          "bbox": [
+            199.86000061035156,
+            106.07836151123047,
+            437.190673828125,
+            119.10208129882812
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "1. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            135.93528747558594,
+            82.12254333496094,
+            147.68702697753906
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Name of the Government Servant ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            132.9924774169922,
+            243.4400634765625,
+            144.7442169189453
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "2. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            154.05015563964844,
+            82.12254333496094,
+            165.80189514160156
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Designation ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            151.0488739013672,
+            149.32675170898438,
+            162.8006134033203
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "3. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            180.9252166748047,
+            82.12254333496094,
+            192.6769561767578
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Date of entering the Central Government ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            169.1637420654297,
+            296.01995849609375,
+            180.9154815673828
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Service ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            186.74266052246094,
+            129.7297821044922,
+            198.49440002441406
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "4. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            207.80027770996094,
+            82.12254333496094,
+            219.55201721191406
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "PAY + SI + NPA ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            204.8574676513672,
+            168.8944854736328,
+            216.6092071533203
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "5. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            225.91514587402344,
+            82.12254333496094,
+            237.66688537597656
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Whether permanent or temporary ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            222.9138641357422,
+            244.10366821289062,
+            234.6656036376953
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "6. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            241.09690856933594,
+            82.12254333496094,
+            252.84864807128906
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Home Town as recorded in the Service Book ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            241.09690856933594,
+            289.5272216796875,
+            252.84864807128906
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "7. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            265.0389404296875,
+            82.12254333496094,
+            276.7906799316406
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Whether wife / husband is employed and if ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            253.27745056152344,
+            295.9496765136719,
+            265.0292053222656
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "so whether entitled to LTC ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            270.85638427734375,
+            212.8251190185547,
+            282.6081237792969
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "8. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            309.5611572265625,
+            82.12254333496094,
+            321.3128967285156
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Whether the concession is to be availed for ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            288.98095703125,
+            295.94781494140625,
+            300.7326965332031
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "visiting home town and if so block for which ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            306.55987548828125,
+            296.0480651855469,
+            318.3116149902344
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "LTC is to be availed. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            324.19720458984375,
+            186.0504608154297,
+            335.948974609375
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "9. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            362.833740234375,
+            82.12254333496094,
+            374.58551025390625
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "(a) If the concession is to visit anywhere in ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            342.25360107421875,
+            296.0063171386719,
+            354.0053405761719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "India, the place to be visited. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            359.89093017578125,
+            224.38401794433594,
+            371.6427001953125
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "(b) Block for which to be availed. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            377.4698486328125,
+            241.2914581298828,
+            389.2215881347656
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "10. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            416.174560546875,
+            88.30438995361328,
+            427.92633056640625
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Single ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            395.59442138671875,
+            124.84394073486328,
+            407.3461608886719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "rail ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            136.138671875,
+            395.59442138671875,
+            152.3056182861328,
+            407.3461608886719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "fare/bus ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            163.60035705566406,
+            395.59442138671875,
+            202.4123077392578,
+            407.3461608886719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "fare ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            213.70704650878906,
+            395.59442138671875,
+            233.50669860839844,
+            407.3461608886719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "from ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            244.8404083251953,
+            395.59442138671875,
+            267.9424133300781,
+            407.3461608886719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "the ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            279.2371520996094,
+            395.59442138671875,
+            296.081298828125,
+            407.3461608886719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "headquarters to home town/place of visit by ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            413.17327880859375,
+            296.0082092285156,
+            424.925048828125
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "shortest route. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            430.752197265625,
+            161.98764038085938,
+            442.5039367675781
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "11. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0199966430664,
+            498.6121826171875,
+            88.30438995361328,
+            510.3639221191406
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Persons in respect of whom LTC is proposed to be availed. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            95.99856567382812,
+            448.93524169921875,
+            350.760986328125,
+            460.6869812011719
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "S.No ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            95.99856567382812,
+            464.05853271484375,
+            121.62633514404297,
+            475.810302734375
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Name ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            211.41220092773438,
+            464.05853271484375,
+            242.72096252441406,
+            475.810302734375
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Age ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            343.4770812988281,
+            464.05853271484375,
+            364.9440002441406,
+            475.810302734375
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Relationship ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            444.5849609375,
+            464.05853271484375,
+            508.57159423828125,
+            475.810302734375
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "1. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            103.62838745117188,
+            476.23907470703125,
+            115.7309341430664,
+            487.9908142089844
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "2. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            103.62838745117188,
+            488.47802734375,
+            115.7309341430664,
+            500.2297668457031
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "3. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            103.62838745117188,
+            500.65850830078125,
+            115.7309341430664,
+            512.4102783203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "4. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            103.62838745117188,
+            512.9559326171875,
+            115.7309341430664,
+            524.7076416015625
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "5. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            103.62838745117188,
+            529.4532470703125,
+            115.7309341430664,
+            541.2049560546875
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "6. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            103.62838745117188,
+            541.6921997070312,
+            115.7309341430664,
+            553.4439086914062
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "12. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.02969360351562,
+            567.0081787109375,
+            88.3140869140625,
+            578.7598876953125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Amount of advance required. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 1,
+          "bbox": [
+            96.00826263427734,
+            561.1322631835938,
+            223.99024963378906,
+            572.8839721679688
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Rs. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            304.39227294921875,
+            561.1322631835938,
+            320.7657775878906,
+            572.8839721679688
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "I declare that the particulars furnished above are true and correct to the best of my knowledge.  I ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            105.07057189941406,
+            596.8357543945312,
+            573.1749267578125,
+            608.5874633789062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "undertake to produce the tickets for the outward journey within ten days of receipt of the advance. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            70.0296630859375,
+            608.5387573242188,
+            499.6590270996094,
+            620.2904663085938
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "In the event of cancellation of the journey or if I fail to produce the tickets within ten days of receipt of ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            105.08027648925781,
+            632.061767578125,
+            573.1671142578125,
+            643.8134765625
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "advance, I undertake to refund the entire advance in one lump sum. ",
+          "font": "Tahoma",
+          "size": 9.744400024414062,
+          "flags": 0,
+          "bbox": [
+            70.0394287109375,
+            643.8232421875,
+            367.65570068359375,
+            655.574951171875
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Date ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            70.0394287109375,
+            678.9810180664062,
+            95.879638671875,
+            690.7327270507812
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Signature of Government Servant. ",
+          "font": "Tahoma-Bold",
+          "size": 9.744400024414062,
+          "flags": 16,
+          "bbox": [
+            403.0445556640625,
+            690.7425537109375,
+            572.97509765625,
+            702.4942626953125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        }
+      ],
+      "font_analysis": [
+        {
+          "page": 1,
+          "fonts": [
+            {
+              "font": "Arial,Bold",
+              "size": 11.670000076293945,
+              "count": 1,
+              "sample_text": "Application form for grant of LTC advance "
+            },
+            {
+              "font": "Tahoma-Bold",
+              "size": 9.744400024414062,
+              "count": 24,
+              "sample_text": "1. "
+            },
+            {
+              "font": "Tahoma",
+              "size": 9.744400024414062,
+              "count": 30,
+              "sample_text": "Name of the Government Servant "
+            }
+          ]
+        }
+      ],
+      "processing_time": 0.12125897407531738
+    },
+    "pdfminer": {
+      "parser": "pdfminer",
+      "full_text": "Application form for grant of LTC advance \n\n1. \n\n2. \n\n3. \n\nName of the Government Servant \n\nDesignation \n\nDate  of  entering  the  Central  Government \n\nService \n\nPAY + SI + NPA \n\n4. \n5.  Whether permanent or temporary \n6. \n\nHome Town as recorded in the Service Book \nWhether  wife  /  husband  is  employed  and  if \n\n7. \n\n8. \n\n9. \n\nso whether entitled to LTC \n\nWhether  the  concession  is  to  be  availed  for \n\nvisiting home  town and  if  so block for  which \n\nLTC is to be availed. \n\n(a)  If  ...",
+      "text_containers": [
+        {
+          "page": 1,
+          "text": "Application form for grant of LTC advance",
+          "bbox": [
+            199.86,
+            722.8979300000001,
+            437.1904560000002,
+            734.56793
+          ]
+        },
+        {
+          "page": 1,
+          "text": "1.",
+          "bbox": [
+            70.02,
+            694.3129536,
+            82.1225448,
+            704.0573535999999
+          ]
+        },
+        {
+          "page": 1,
+          "text": "2.",
+          "bbox": [
+            70.02000000000001,
+            676.198114,
+            82.12254480000001,
+            685.942514
+          ]
+        },
+        {
+          "page": 1,
+          "text": "3.",
+          "bbox": [
+            70.02000000000001,
+            649.3230588,
+            82.12254480000001,
+            659.0674587999999
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Name of the Government Servant",
+          "bbox": [
+            95.9985704,
+            697.2557624,
+            243.44011235999992,
+            707.0001623999999
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Designation",
+          "bbox": [
+            95.9985704,
+            679.1993892,
+            149.32674828,
+            688.9437892
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Date  of  entering  the  Central  Government",
+          "bbox": [
+            95.9985704,
+            661.0845496000001,
+            296.01992031999987,
+            670.8289496
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Service",
+          "bbox": [
+            95.9985704,
+            643.505652,
+            129.72978544,
+            653.250052
+          ]
+        },
+        {
+          "page": 1,
+          "text": "PAY + SI + NPA",
+          "bbox": [
+            95.9985704,
+            625.3908124000001,
+            168.89447792000004,
+            635.1352124
+          ]
+        },
+        {
+          "page": 1,
+          "text": "4. \n5.  Whether permanent or temporary \n6.",
+          "bbox": [
+            70.02000000000001,
+            589.1513888000002,
+            244.1037059999999,
+            632.1924036
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Home Town as recorded in the Service Book \nWhether  wife  /  husband  is  employed  and  if",
+          "bbox": [
+            95.9985704,
+            576.9708888000002,
+            295.9497606400002,
+            598.8957888000001
+          ]
+        },
+        {
+          "page": 1,
+          "text": "7.",
+          "bbox": [
+            70.02000000000001,
+            565.2093980000002,
+            82.12254480000001,
+            574.9537980000001
+          ]
+        },
+        {
+          "page": 1,
+          "text": "8.",
+          "bbox": [
+            70.02000000000001,
+            520.6872344000002,
+            82.12254480000001,
+            530.4316344000001
+          ]
+        },
+        {
+          "page": 1,
+          "text": "9.",
+          "bbox": [
+            70.02000000000001,
+            467.41459960000014,
+            82.12254480000001,
+            477.1589996000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "so whether entitled to LTC",
+          "bbox": [
+            95.9985704,
+            559.3919912000002,
+            212.82515643999994,
+            569.1363912000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Whether  the  concession  is  to  be  availed  for",
+          "bbox": [
+            95.9985704,
+            541.2674072000002,
+            295.9478117599998,
+            551.0118072000001
+          ]
+        },
+        {
+          "page": 1,
+          "text": "visiting home  town and  if  so block for  which",
+          "bbox": [
+            95.9985704,
+            523.6885096000002,
+            296.04817907999995,
+            533.4329096000001
+          ]
+        },
+        {
+          "page": 1,
+          "text": "LTC is to be availed.",
+          "bbox": [
+            95.9985704,
+            506.05114560000015,
+            186.05046856000004,
+            515.7955456000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "(a)  If  the  concession  is  to  visit  anywhere  in",
+          "bbox": [
+            95.9985704,
+            487.99477240000016,
+            296.0062781600001,
+            497.7391724000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "India, the place to be visited.",
+          "bbox": [
+            95.9985704,
+            470.35740840000017,
+            224.38396372000003,
+            480.1018084000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "(b) Block for which to be availed.",
+          "bbox": [
+            95.9985704,
+            452.77851080000016,
+            241.29147216000015,
+            462.5229108000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Single",
+          "bbox": [
+            95.9985704,
+            434.6539268000002,
+            124.84394328000002,
+            444.39832680000023
+          ]
+        },
+        {
+          "page": 1,
+          "text": "rail",
+          "bbox": [
+            136.13867732,
+            434.6539268000002,
+            152.30561136000006,
+            444.39832680000023
+          ]
+        },
+        {
+          "page": 1,
+          "text": "fare/bus",
+          "bbox": [
+            163.60034540000004,
+            434.6539268000002,
+            202.41229060000003,
+            444.39832680000023
+          ]
+        },
+        {
+          "page": 1,
+          "text": "fare",
+          "bbox": [
+            213.70702464000004,
+            434.6539268000002,
+            233.50667100000004,
+            444.39832680000023
+          ]
+        },
+        {
+          "page": 1,
+          "text": "from",
+          "bbox": [
+            244.84038264000006,
+            434.6539268000002,
+            267.94240616,
+            444.39832680000023
+          ]
+        },
+        {
+          "page": 1,
+          "text": "the",
+          "bbox": [
+            279.2371402,
+            434.6539268000002,
+            296.08131003999995,
+            444.39832680000023
+          ]
+        },
+        {
+          "page": 1,
+          "text": "10.",
+          "bbox": [
+            70.02000000000001,
+            414.0737540000002,
+            88.30439216,
+            423.8181540000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "headquarters  to  home  town/place  of  visit  by",
+          "bbox": [
+            95.9985704,
+            417.0750292000002,
+            296.00822703999995,
+            426.81942920000023
+          ]
+        },
+        {
+          "page": 1,
+          "text": "shortest route.",
+          "bbox": [
+            95.9985704,
+            399.4961316000002,
+            161.9876472,
+            409.2405316000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Persons in respect of whom LTC is proposed to be availed.",
+          "bbox": [
+            95.9985704,
+            381.31308120000017,
+            350.76103620000004,
+            391.0574812000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Name",
+          "bbox": [
+            211.41221844,
+            366.18977240000015,
+            242.72097564000003,
+            375.9341724000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Age",
+          "bbox": [
+            343.4770972,
+            366.18977240000015,
+            364.9440104,
+            375.9341724000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Relationship",
+          "bbox": [
+            444.5849916,
+            366.18977240000015,
+            508.57159420000005,
+            375.9341724000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "S.No \n1. \n2. \n3. \n4.",
+          "bbox": [
+            95.9985704,
+            317.29237320000016,
+            121.62634240000001,
+            375.9341724000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "5. \n6.",
+          "bbox": [
+            103.62843559999999,
+            288.55613760000017,
+            115.73098039999999,
+            310.5395040000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Amount of advance required.",
+          "bbox": [
+            96.0083148,
+            269.11605960000014,
+            223.99028996,
+            278.8604596000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Rs.",
+          "bbox": [
+            304.3923088,
+            269.11605960000014,
+            320.76582412000005,
+            278.8604596000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "11.",
+          "bbox": [
+            70.02000000000001,
+            331.63613000000015,
+            88.30439216,
+            341.3805300000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "12.",
+          "bbox": [
+            70.02974439999998,
+            263.24018640000014,
+            88.31413655999998,
+            272.9845864000002
+          ]
+        },
+        {
+          "page": 1,
+          "text": "I  declare  that  the  particulars  furnished  above  are  true  and  correct  to  the  best  of  my...",
+          "bbox": [
+            105.07060680000004,
+            233.41257800000017,
+            553.9181340399999,
+            243.15697800000015
+          ]
+        },
+        {
+          "page": 1,
+          "text": "I",
+          "bbox": [
+            561.3034148,
+            233.41257800000017,
+            573.17501732,
+            243.15697800000015
+          ]
+        },
+        {
+          "page": 1,
+          "text": "undertake to produce the tickets for the outward journey within ten days of receipt of the advance.",
+          "bbox": [
+            70.02974440000003,
+            221.70955360000016,
+            499.65936595999995,
+            231.45395360000015
+          ]
+        },
+        {
+          "page": 1,
+          "text": "In  the  event  of  cancellation  of  the  journey  or  if  I  fail  to  produce  the  tickets  with...",
+          "bbox": [
+            105.08035120000002,
+            198.18657200000015,
+            573.1672217999999,
+            207.93097200000014
+          ]
+        },
+        {
+          "page": 1,
+          "text": "advance, I undertake to refund the entire advance in one lump sum.",
+          "bbox": [
+            70.03948880000002,
+            186.42508120000016,
+            367.65587691999974,
+            196.16948120000015
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Date",
+          "bbox": [
+            70.03948880000002,
+            151.26728600000015,
+            95.87968872000002,
+            161.01168600000014
+          ]
+        },
+        {
+          "page": 1,
+          "text": "Signature of Government Servant.",
+          "bbox": [
+            403.04461440000006,
+            139.50579520000016,
+            572.9752571200002,
+            149.25019520000015
+          ]
+        }
+      ],
+      "chars": [],
+      "processing_time": 0.0795280933380127
+    },
+    "camelot": {
+      "parser": "camelot",
+      "tables": [
+        {
+          "table_index": 0,
+          "page": 1,
+          "shape": [
+            19,
+            6
+          ],
+          "accuracy": 81.83076869522999,
+          "sample_data": {
+            "0": {
+              "0": "1.",
+              "1": "2.",
+              "2": "3."
+            },
+            "1": {
+              "0": "Name of the Government Servant",
+              "1": "Designation",
+              "2": "Date  of  entering \nthe  Central  Government \nService"
+            },
+            "2": {
+              "0": "",
+              "1": "",
+              "2": ""
+            },
+            "3": {
+              "0": "",
+              "1": "",
+              "2": ""
+            },
+            "4": {
+              "0": "",
+              "1": "",
+              "2": ""
+            },
+            "5": {
+              "0": "",
+              "1": "",
+              "2": ""
+            }
+          }
+        }
+      ],
+      "processing_time": 1.2229712009429932
+    }
+  }
+}

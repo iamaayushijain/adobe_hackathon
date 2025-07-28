@@ -1,0 +1,286 @@
+2025-07-27 18:56:28,843 - WARNING - Using local input/output directories for development
+2025-07-27 18:56:28,843 - INFO - Starting PDF Outline Extractor
+2025-07-27 18:56:28,843 - INFO - Input directory: input
+2025-07-27 18:56:28,843 - INFO - Output directory: output
+2025-07-27 18:56:28,843 - INFO - Found 5 PDF files to process
+2025-07-27 18:56:29,076 - INFO - Processing complete!
+2025-07-27 18:56:29,076 - INFO - Successfully processed: 5/5 files
+2025-07-27 18:56:29,076 - INFO - Failed: 0 files
+2025-07-27 18:56:29,076 - INFO - Total time: 0.23 seconds
+2025-07-27 18:56:29,076 - INFO - Average time per file: 0.04 seconds
+2025-07-27 18:56:29,076 - INFO - Performance target met!
+2025-07-27 19:02:49,074 - WARNING - Using local input/output directories for development
+2025-07-27 19:02:49,074 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:02:49,074 - INFO - Input directory: input
+2025-07-27 19:02:49,074 - INFO - Output directory: output
+2025-07-27 19:02:49,074 - INFO - Found 5 PDF files to process
+2025-07-27 19:02:49,769 - INFO - Processing complete!
+2025-07-27 19:02:49,769 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:02:49,769 - INFO - Failed: 0 files
+2025-07-27 19:02:49,769 - INFO - Total time: 0.69 seconds
+2025-07-27 19:02:49,769 - INFO - Average time per file: 0.21 seconds
+2025-07-27 19:02:49,769 - INFO - Performance target met!
+2025-07-27 19:05:07,126 - WARNING - Using local input/output directories for development
+2025-07-27 19:05:07,126 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:05:07,126 - INFO - Input directory: input
+2025-07-27 19:05:07,126 - INFO - Output directory: output
+2025-07-27 19:05:07,127 - INFO - Found 5 PDF files to process
+2025-07-27 19:05:07,327 - INFO - Processing complete!
+2025-07-27 19:05:07,327 - INFO - Successfully processed: 0/5 files
+2025-07-27 19:05:07,327 - INFO - Failed: 5 files
+2025-07-27 19:05:07,327 - INFO - Total time: 0.20 seconds
+2025-07-27 19:05:07,327 - INFO - Average time per file: 0.00 seconds
+2025-07-27 19:05:07,327 - INFO - Performance target met!
+2025-07-27 19:10:59,228 - WARNING - Using local input/output directories for development
+2025-07-27 19:10:59,228 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:10:59,228 - INFO - Input directory: input
+2025-07-27 19:10:59,228 - INFO - Output directory: output
+2025-07-27 19:10:59,228 - INFO - Found 5 PDF files to process
+2025-07-27 19:10:59,878 - INFO - Processing complete!
+2025-07-27 19:10:59,878 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:10:59,878 - INFO - Failed: 0 files
+2025-07-27 19:10:59,878 - INFO - Total time: 0.65 seconds
+2025-07-27 19:10:59,878 - INFO - Average time per file: 0.20 seconds
+2025-07-27 19:10:59,878 - INFO - Performance target met!
+2025-07-27 19:18:53,908 - WARNING - Using local input/output directories for development
+2025-07-27 19:18:53,909 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:18:53,909 - INFO - Input directory: input
+2025-07-27 19:18:53,909 - INFO - Output directory: output
+2025-07-27 19:18:53,909 - INFO - Found 5 PDF files to process
+2025-07-27 19:18:54,856 - INFO - Processing complete!
+2025-07-27 19:18:54,857 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:18:54,857 - INFO - Failed: 0 files
+2025-07-27 19:18:54,857 - INFO - Total time: 0.95 seconds
+2025-07-27 19:18:54,857 - INFO - Average time per file: 0.19 seconds
+2025-07-27 19:18:54,857 - INFO - Performance target met!
+2025-07-27 19:23:03,272 - WARNING - Using local input/output directories for development
+2025-07-27 19:23:03,273 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:23:03,273 - INFO - Input directory: input
+2025-07-27 19:23:03,273 - INFO - Output directory: output
+2025-07-27 19:23:03,273 - INFO - Found 5 PDF files to process
+2025-07-27 19:23:03,901 - INFO - Processing complete!
+2025-07-27 19:23:03,901 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:23:03,901 - INFO - Failed: 0 files
+2025-07-27 19:23:03,901 - INFO - Total time: 0.63 seconds
+2025-07-27 19:23:03,901 - INFO - Average time per file: 0.19 seconds
+2025-07-27 19:23:03,901 - INFO - Performance target met!
+2025-07-27 19:23:23,918 - WARNING - Using local input/output directories for development
+2025-07-27 19:23:23,919 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:23:23,919 - INFO - Input directory: input
+2025-07-27 19:23:23,919 - INFO - Output directory: output
+2025-07-27 19:23:23,919 - INFO - Found 5 PDF files to process
+2025-07-27 19:23:24,566 - INFO - Processing complete!
+2025-07-27 19:23:24,567 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:23:24,567 - INFO - Failed: 0 files
+2025-07-27 19:23:24,567 - INFO - Total time: 0.65 seconds
+2025-07-27 19:23:24,567 - INFO - Average time per file: 0.20 seconds
+2025-07-27 19:23:24,567 - INFO - Performance target met!
+2025-07-27 19:24:43,637 - WARNING - Using local input/output directories for development
+2025-07-27 19:24:43,637 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:24:43,637 - INFO - Input directory: input
+2025-07-27 19:24:43,637 - INFO - Output directory: output
+2025-07-27 19:24:43,638 - INFO - Found 5 PDF files to process
+2025-07-27 19:24:50,199 - INFO - Processing complete!
+2025-07-27 19:24:50,200 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:24:50,200 - INFO - Failed: 0 files
+2025-07-27 19:24:50,200 - INFO - Total time: 6.56 seconds
+2025-07-27 19:24:50,200 - INFO - Average time per file: 2.21 seconds
+2025-07-27 19:24:50,200 - INFO - Performance target met!
+2025-07-27 19:26:52,906 - WARNING - Using local input/output directories for development
+2025-07-27 19:26:52,907 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:26:52,907 - INFO - Input directory: input
+2025-07-27 19:26:52,907 - INFO - Output directory: output
+2025-07-27 19:26:52,907 - INFO - Found 5 PDF files to process
+2025-07-27 19:26:53,567 - INFO - Processing complete!
+2025-07-27 19:26:53,567 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:26:53,567 - INFO - Failed: 0 files
+2025-07-27 19:26:53,567 - INFO - Total time: 0.66 seconds
+2025-07-27 19:26:53,567 - INFO - Average time per file: 0.21 seconds
+2025-07-27 19:26:53,567 - INFO - Performance target met!
+2025-07-27 19:38:04,957 - WARNING - Using local input/output directories for development
+2025-07-27 19:38:04,958 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:38:04,958 - INFO - Input directory: input
+2025-07-27 19:38:04,958 - INFO - Output directory: output
+2025-07-27 19:38:04,958 - INFO - Found 5 PDF files to process
+2025-07-27 19:38:06,457 - INFO - Processing complete!
+2025-07-27 19:38:06,457 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:38:06,457 - INFO - Failed: 0 files
+2025-07-27 19:38:06,457 - INFO - Total time: 1.50 seconds
+2025-07-27 19:38:06,457 - INFO - Average time per file: 0.33 seconds
+2025-07-27 19:38:06,457 - INFO - Performance target met!
+2025-07-27 19:40:33,494 - WARNING - Using local input/output directories for development
+2025-07-27 19:40:33,494 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:40:33,494 - INFO - Input directory: input
+2025-07-27 19:40:33,494 - INFO - Output directory: output
+2025-07-27 19:40:33,494 - INFO - Found 5 PDF files to process
+2025-07-27 19:40:34,907 - INFO - Processing complete!
+2025-07-27 19:40:34,907 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:40:34,907 - INFO - Failed: 0 files
+2025-07-27 19:40:34,907 - INFO - Total time: 1.41 seconds
+2025-07-27 19:40:34,907 - INFO - Average time per file: 0.33 seconds
+2025-07-27 19:40:34,908 - INFO - Performance target met!
+2025-07-27 19:46:07,641 - WARNING - Using local input/output directories for development
+2025-07-27 19:46:07,641 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:46:07,641 - INFO - Input directory: input
+2025-07-27 19:46:07,641 - INFO - Output directory: output
+2025-07-27 19:46:07,641 - INFO - Found 5 PDF files to process
+2025-07-27 19:46:09,428 - INFO - Processing complete!
+2025-07-27 19:46:09,428 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:46:09,429 - INFO - Failed: 0 files
+2025-07-27 19:46:09,429 - INFO - Total time: 1.79 seconds
+2025-07-27 19:46:09,429 - INFO - Average time per file: 0.45 seconds
+2025-07-27 19:46:09,429 - INFO - Performance target met!
+2025-07-27 19:51:46,320 - WARNING - Using local input/output directories for development
+2025-07-27 19:51:46,320 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:51:46,320 - INFO - Input directory: input
+2025-07-27 19:51:46,320 - INFO - Output directory: output
+2025-07-27 19:51:46,320 - INFO - Found 5 PDF files to process
+2025-07-27 19:51:48,153 - INFO - Processing complete!
+2025-07-27 19:51:48,153 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:51:48,153 - INFO - Failed: 0 files
+2025-07-27 19:51:48,153 - INFO - Total time: 1.83 seconds
+2025-07-27 19:51:48,153 - INFO - Average time per file: 0.45 seconds
+2025-07-27 19:51:48,153 - INFO - Performance target met!
+2025-07-27 19:53:02,830 - WARNING - Using local input/output directories for development
+2025-07-27 19:53:02,830 - INFO - Starting PDF Outline Extractor
+2025-07-27 19:53:02,830 - INFO - Input directory: input
+2025-07-27 19:53:02,830 - INFO - Output directory: output
+2025-07-27 19:53:02,830 - INFO - Found 5 PDF files to process
+2025-07-27 19:53:04,680 - INFO - Processing complete!
+2025-07-27 19:53:04,680 - INFO - Successfully processed: 5/5 files
+2025-07-27 19:53:04,680 - INFO - Failed: 0 files
+2025-07-27 19:53:04,680 - INFO - Total time: 1.85 seconds
+2025-07-27 19:53:04,680 - INFO - Average time per file: 0.49 seconds
+2025-07-27 19:53:04,680 - INFO - Performance target met!
+2025-07-27 20:16:31,487 - WARNING - Using local input/output directories for development
+2025-07-27 20:16:31,487 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:16:31,487 - INFO - Input directory: input
+2025-07-27 20:16:31,487 - INFO - Output directory: output
+2025-07-27 20:16:31,487 - INFO - Found 5 PDF files to process
+2025-07-27 20:16:31,989 - INFO - Processing complete!
+2025-07-27 20:16:31,989 - INFO - Successfully processed: 0/5 files
+2025-07-27 20:16:31,989 - INFO - Failed: 5 files
+2025-07-27 20:16:31,989 - INFO - Total time: 0.50 seconds
+2025-07-27 20:16:31,989 - INFO - Average time per file: 0.00 seconds
+2025-07-27 20:16:31,989 - INFO - Performance target met!
+2025-07-27 20:19:16,713 - WARNING - Using local input/output directories for development
+2025-07-27 20:19:16,713 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:19:16,713 - INFO - Input directory: input
+2025-07-27 20:19:16,713 - INFO - Output directory: output
+2025-07-27 20:19:16,713 - INFO - Found 5 PDF files to process
+2025-07-27 20:19:32,735 - INFO - Processing complete!
+2025-07-27 20:19:32,736 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:19:32,736 - INFO - Failed: 0 files
+2025-07-27 20:19:32,736 - INFO - Total time: 16.02 seconds
+2025-07-27 20:19:32,736 - INFO - Average time per file: 7.86 seconds
+2025-07-27 20:19:32,736 - INFO - Performance target met!
+2025-07-27 20:23:25,055 - WARNING - Using local input/output directories for development
+2025-07-27 20:23:25,055 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:23:25,055 - INFO - Input directory: input
+2025-07-27 20:23:25,055 - INFO - Output directory: output
+2025-07-27 20:23:25,055 - INFO - Found 5 PDF files to process
+2025-07-27 20:23:39,719 - INFO - Processing complete!
+2025-07-27 20:23:39,720 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:23:39,720 - INFO - Failed: 0 files
+2025-07-27 20:23:39,720 - INFO - Total time: 14.66 seconds
+2025-07-27 20:23:39,720 - INFO - Average time per file: 6.72 seconds
+2025-07-27 20:23:39,720 - INFO - Performance target met!
+2025-07-27 20:34:48,458 - WARNING - Using local input/output directories for development
+2025-07-27 20:34:48,458 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:34:48,458 - INFO - Input directory: input
+2025-07-27 20:34:48,458 - INFO - Output directory: output
+2025-07-27 20:34:48,458 - INFO - Found 5 PDF files to process
+2025-07-27 20:35:03,909 - INFO - Processing complete!
+2025-07-27 20:35:03,910 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:35:03,910 - INFO - Failed: 0 files
+2025-07-27 20:35:03,910 - INFO - Total time: 15.45 seconds
+2025-07-27 20:35:03,910 - INFO - Average time per file: 7.16 seconds
+2025-07-27 20:35:03,910 - INFO - Performance target met!
+2025-07-27 20:37:54,369 - WARNING - Using local input/output directories for development
+2025-07-27 20:37:54,369 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:37:54,369 - INFO - Input directory: input
+2025-07-27 20:37:54,369 - INFO - Output directory: output
+2025-07-27 20:37:54,370 - INFO - Found 5 PDF files to process
+2025-07-27 20:38:09,493 - INFO - Processing complete!
+2025-07-27 20:38:09,493 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:38:09,493 - INFO - Failed: 0 files
+2025-07-27 20:38:09,493 - INFO - Total time: 15.12 seconds
+2025-07-27 20:38:09,493 - INFO - Average time per file: 6.85 seconds
+2025-07-27 20:38:09,493 - INFO - Performance target met!
+2025-07-27 20:41:03,294 - WARNING - Using local input/output directories for development
+2025-07-27 20:41:03,294 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:41:03,294 - INFO - Input directory: input
+2025-07-27 20:41:03,294 - INFO - Output directory: output
+2025-07-27 20:41:03,294 - INFO - Found 5 PDF files to process
+2025-07-27 20:41:18,655 - INFO - Processing complete!
+2025-07-27 20:41:18,655 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:41:18,655 - INFO - Failed: 0 files
+2025-07-27 20:41:18,655 - INFO - Total time: 15.36 seconds
+2025-07-27 20:41:18,655 - INFO - Average time per file: 6.98 seconds
+2025-07-27 20:41:18,655 - INFO - Performance target met!
+2025-07-27 20:42:42,292 - WARNING - Using local input/output directories for development
+2025-07-27 20:42:42,292 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:42:42,292 - INFO - Input directory: input
+2025-07-27 20:42:42,292 - INFO - Output directory: output
+2025-07-27 20:42:42,292 - INFO - Found 5 PDF files to process
+2025-07-27 20:42:57,900 - INFO - Processing complete!
+2025-07-27 20:42:57,901 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:42:57,901 - INFO - Failed: 0 files
+2025-07-27 20:42:57,901 - INFO - Total time: 15.61 seconds
+2025-07-27 20:42:57,901 - INFO - Average time per file: 7.30 seconds
+2025-07-27 20:42:57,901 - INFO - Performance target met!
+2025-07-27 20:43:39,818 - WARNING - Using local input/output directories for development
+2025-07-27 20:43:39,818 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:43:39,818 - INFO - Input directory: input
+2025-07-27 20:43:39,818 - INFO - Output directory: output
+2025-07-27 20:43:39,818 - INFO - Found 5 PDF files to process
+2025-07-27 20:43:54,832 - INFO - Processing complete!
+2025-07-27 20:43:54,832 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:43:54,832 - INFO - Failed: 0 files
+2025-07-27 20:43:54,832 - INFO - Total time: 15.01 seconds
+2025-07-27 20:43:54,832 - INFO - Average time per file: 6.85 seconds
+2025-07-27 20:43:54,832 - INFO - Performance target met!
+2025-07-27 20:47:07,606 - WARNING - Using local input/output directories for development
+2025-07-27 20:47:07,606 - INFO - Starting PDF Outline Extractor
+2025-07-27 20:47:07,606 - INFO - Input directory: input
+2025-07-27 20:47:07,606 - INFO - Output directory: output
+2025-07-27 20:47:07,606 - INFO - Found 5 PDF files to process
+2025-07-27 20:47:30,567 - INFO - Processing complete!
+2025-07-27 20:47:30,567 - INFO - Successfully processed: 5/5 files
+2025-07-27 20:47:30,567 - INFO - Failed: 0 files
+2025-07-27 20:47:30,567 - INFO - Total time: 22.96 seconds
+2025-07-27 20:47:30,567 - INFO - Average time per file: 10.37 seconds
+2025-07-27 20:47:30,567 - WARNING - Average processing time (10.37s) exceeds 10-second target
+2025-07-28 12:07:01,735 - WARNING - Using local input/output directories for development
+2025-07-28 12:07:01,736 - INFO - Starting PDF Outline Extractor
+2025-07-28 12:07:01,736 - INFO - Input directory: input
+2025-07-28 12:07:01,736 - INFO - Output directory: output
+2025-07-28 12:07:01,736 - INFO - Found 5 PDF files to process
+2025-07-28 12:07:24,604 - INFO - Processing complete!
+2025-07-28 12:07:24,604 - INFO - Successfully processed: 5/5 files
+2025-07-28 12:07:24,605 - INFO - Failed: 0 files
+2025-07-28 12:07:24,605 - INFO - Total time: 22.87 seconds
+2025-07-28 12:07:24,605 - INFO - Average time per file: 9.53 seconds
+2025-07-28 12:07:24,605 - INFO - Performance target met!
+2025-07-28 12:15:20,689 - WARNING - Using local input/output directories for development
+2025-07-28 12:15:20,689 - INFO - Starting PDF Outline Extractor
+2025-07-28 12:15:20,689 - INFO - Input directory: input
+2025-07-28 12:15:20,689 - INFO - Output directory: output
+2025-07-28 12:15:20,690 - INFO - Found 5 PDF files to process
+2025-07-28 12:15:43,587 - INFO - Processing complete!
+2025-07-28 12:15:43,587 - INFO - Successfully processed: 5/5 files
+2025-07-28 12:15:43,587 - INFO - Failed: 0 files
+2025-07-28 12:15:43,588 - INFO - Total time: 22.90 seconds
+2025-07-28 12:15:43,588 - INFO - Average time per file: 9.60 seconds
+2025-07-28 12:15:43,588 - INFO - Performance target met!
+2025-07-28 12:38:51,714 - WARNING - Using local input/output directories for development
+2025-07-28 12:38:51,714 - INFO - Starting PDF Outline Extractor
+2025-07-28 12:38:51,714 - INFO - Input directory: input
+2025-07-28 12:38:51,714 - INFO - Output directory: output
+2025-07-28 12:38:51,714 - INFO - Found 5 PDF files to process
+2025-07-28 12:39:04,547 - INFO - Processing complete!
+2025-07-28 12:39:04,547 - INFO - Successfully processed: 5/5 files
+2025-07-28 12:39:04,547 - INFO - Failed: 0 files
+2025-07-28 12:39:04,548 - INFO - Total time: 12.83 seconds
+2025-07-28 12:39:04,548 - INFO - Average time per file: 3.59 seconds
+2025-07-28 12:39:04,548 - INFO - Performance target met!

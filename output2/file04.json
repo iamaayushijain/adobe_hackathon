@@ -1,0 +1,88 @@
+{
+  "title": "Parsippany -Troy Hills STEM Pathways",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Parsippany -Troy Hills STEM Pathways",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Mission Statement:",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Goals:",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "REGULAR PATHWAY",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "DISTINCTION PATHWAY",
+      "page": 1
+    }
+  ],
+  "raw_text": [
+    {
+      "page": 1,
+      "text": "Parsippany -Troy Hills STEM Pathways\nMission Statement:  To provide PTHSD high school students with the opportunity to \nconcentrate their studies, beyond those required in high school, in the areas of science, \ntechnology, engineering, and mathematics, and expose students to relevant real world \nexperiences through project work, conferences and presentations to enhance their high school \nexperience. \nGoals:\n• Inspire keen interest in mathematics, science, engineering, and\ntechnology, develop strong scholarship in the subject and \npromote the enjoyment of these studies in high school.\n• Expose students to potential career opportunities in the field.\n• Encourage students to pursue higher education and major in \nSTEM careers.\n• Promote interactions with STEM professionals to learn about \nfuture opportunities.\n• Support field experiences connected to the world outside of \nthe school building.\n• Signal to employers, universities, training programs, and \nmilitary that a student has completed a comprehensive course \nof study in a specialized area.\n• Cultivate transferable work habits such as perseverance, goal \nsetting, and self-direction.\nPATHWAY OPTIONS\nREGULAR PATHWAY\n4 credits of Math\n4 credits of Science\n4 credits of STEM-designated electives\n●\n●\n●\n● Maintain an overall 2.85 GPA\n●\nParticipate in a minimum of 3 STEM \npresentations/conferences each year \nwith a required minimum total of 12 \npresentations/conferences throughout \nthe 4 years. *\nJoin and actively participate in a \nSTEM-related extracurricular activity or \nclub every year of attendance. - \n●\n●\n●\n●\nDISTINCTION PATHWAY\n4 credits of Math - At least one math \ncourse should be an AP Math class.\n4 credits of Science- At least one \nscience course should be an AP \nScience class.\n4 credits of STEM-designated electives \n- One must be a Computer \nScience/Technology Class\n● Maintain an overall 3.5 GPA \n●\nParticipate in a minimum of 3 STEM \npresentations/conferences a year with a \nrequired minimum total of 12 \npresentations/conferences throughout \nthe 4 years.\nJoin and actively participate in a \nSTEM-related extracurricular activity or \nclub every year of attendance. \nEither participate in an internship or \ndesign and implement a community \nimpact project.\n●\n●\n \n"
+    }
+  ],
+  "tables": [
+    {
+      "page": 1,
+      "index": 0,
+      "data": [
+        [
+          "",
+          "",
+          "Parsippany -Troy Hills STEM Pathways"
+        ]
+      ]
+    },
+    {
+      "page": 1,
+      "index": 1,
+      "data": [
+        [
+          "PATHWAY OPTIONS",
+          null
+        ],
+        [
+          "REGULAR PATHWAY\n● 4 credits of Math\n● 4 credits of Science\n● 4 credits of STEM-designated electives\n● Maintain an overall 2.85 GPA\n● Participate in a minimum of 3 STEM\npresentations/conferences each year\nwith a required minimum total of 12\npresentations/conferences throughout\nthe 4 years. *\n● Join and actively participate in a\nSTEM-related extracurricular activity or\nclub every year of attendance. -",
+          "DISTINCTION PATHWAY\n● 4 credits of Math - At least one math\ncourse should be an AP Math class.\n● 4 credits of Science- At least one\nscience course should be an AP\nScience class.\n● 4 credits of STEM-designated electives\n- One must be a Computer\nScience/Technology Class\n● Maintain an overall 3.5 GPA\n● Participate in a minimum of 3 STEM\npresentations/conferences a year with a\nrequired minimum total of 12\npresentations/conferences throughout\nthe 4 years.\n● Join and actively participate in a\nSTEM-related extracurricular activity or\nclub every year of attendance.\n● Either participate in an internship or\ndesign and implement a community\nimpact project."
+        ]
+      ]
+    },
+    {
+      "page": 1,
+      "index": 2,
+      "data": [
+        [
+          "REGULAR PATHWAY"
+        ],
+        [
+          ""
+        ]
+      ]
+    },
+    {
+      "page": 1,
+      "index": 3,
+      "data": [
+        [
+          "DISTINCTION PATHWAY"
+        ],
+        [
+          ""
+        ]
+      ]
+    }
+  ],
+  "ocr": []
+}

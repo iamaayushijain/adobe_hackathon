@@ -1,0 +1,828 @@
+{
+  "pdf_file": "input/file05.pdf",
+  "file_size_mb": 0.9386434555053711,
+  "parsers": {
+    "pdfplumber": {
+      "parser": "pdfplumber",
+      "text_pages": [
+        {
+          "page": 1,
+          "text": "ADDRESS:\nTOPJUMP\n3735 PARKWAY\nPIGEON FORGE, TN 37863\n(NEAR DIXIE STAMPEDE ON THE PARKWAY)\nRSVP: ----------------\nCLOSED TOED SHOES ARE REQUIRED FOR CLIMBING\nPARENTS OR GUARDIANS NOT ATTENDING THE PART..."
+        }
+      ],
+      "tables": [],
+      "chars": [
+        {
+          "page": 1,
+          "text": "A",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 32.6488,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "D",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 41.5393849,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "D",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 51.1119533,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "R",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 60.684521700000005,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "E",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 70.2570901,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "S",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 79.14767499999999,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "S",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 88.03825989999999,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": ":",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 96.92884479999998,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": " ",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 100.99594639999998,
+          "y0": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "T",
+          "fontname": "Helvetica",
+          "size": 12.403099999999995,
+          "x0": 131.4354,
+          "y0": 461.94154169999996
+        }
+      ],
+      "words": [
+        {
+          "page": 1,
+          "text": "ADDRESS:",
+          "fontname": "",
+          "size": 0,
+          "x0": 32.6488,
+          "top": 447.7781417
+        },
+        {
+          "page": 1,
+          "text": "TOPJUMP",
+          "fontname": "",
+          "size": 0,
+          "x0": 131.4354,
+          "top": 461.94154169999996
+        },
+        {
+          "page": 1,
+          "text": "3735",
+          "fontname": "",
+          "size": 0,
+          "x0": 114.8059,
+          "top": 475.86504169999995
+        },
+        {
+          "page": 1,
+          "text": "PARKWAY",
+          "fontname": "",
+          "size": 0,
+          "x0": 146.8464664,
+          "top": 475.86504169999995
+        },
+        {
+          "page": 1,
+          "text": "PIGEON",
+          "fontname": "",
+          "size": 0,
+          "x0": 81.078988,
+          "top": 489.79372299999994
+        },
+        {
+          "page": 1,
+          "text": "FORGE,",
+          "fontname": "",
+          "size": 0,
+          "x0": 136.257208,
+          "top": 489.79372299999994
+        },
+        {
+          "page": 1,
+          "text": "TN",
+          "fontname": "",
+          "size": 0,
+          "x0": 189.99707439999997,
+          "top": 489.79372299999994
+        },
+        {
+          "page": 1,
+          "text": "37863",
+          "fontname": "",
+          "size": 0,
+          "x0": 211.05159519999998,
+          "top": 489.79372299999994
+        },
+        {
+          "page": 1,
+          "text": "(NEAR",
+          "fontname": "",
+          "size": 0,
+          "x0": 58.3879,
+          "top": 503.45087609999996
+        },
+        {
+          "page": 1,
+          "text": "DIXIE",
+          "fontname": "",
+          "size": 0,
+          "x0": 91.944829,
+          "top": 503.45087609999996
+        }
+      ],
+      "font_info": [
+        {
+          "page": 1,
+          "unique_fonts": [
+            "Times-Roman",
+            "Helvetica-Bold",
+            "Helvetica"
+          ],
+          "font_size_range": [
+            7.2017999999999915,
+            26.4065
+          ],
+          "avg_font_size": 11.32178488745978
+        }
+      ],
+      "processing_time": 0.1135110855102539
+    },
+    "pymupdf": {
+      "parser": "pymupdf",
+      "text_pages": [
+        {
+          "page": 1,
+          "text": "ADDRESS: \nTOPJUMP \n3735 PARKWAY \nPIGEON FORGE, TN 37863 \n(NEAR DIXIE STAMPEDE ON THE PARKWAY) \nRSVP: ----------------\nCLOSED TOED SHOES ARE REQUIRED FOR CLIMBING \nPARENTS OR GUARDIANS NOT ATTENDING TH..."
+        }
+      ],
+      "text_blocks": [
+        {
+          "page": 1,
+          "text": "ADDRESS: ",
+          "font": "Helvetica",
+          "size": 12.401399612426758,
+          "flags": 0,
+          "bbox": [
+            32.648799896240234,
+            444.2804260253906,
+            104.44307708740234,
+            461.3222961425781
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "TOPJUMP ",
+          "font": "Helvetica",
+          "size": 12.413744926452637,
+          "flags": 0,
+          "bbox": [
+            131.43539428710938,
+            458.4438171386719,
+            198.60169982910156,
+            475.4856872558594
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "3735 ",
+          "font": "Helvetica",
+          "size": 12.401350021362305,
+          "flags": 0,
+          "bbox": [
+            114.80590057373047,
+            472.3673400878906,
+            145.9735107421875,
+            489.4092102050781
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "PARKWAY ",
+          "font": "Helvetica-Bold",
+          "size": 12.401350021362305,
+          "flags": 16,
+          "bbox": [
+            146.84646606445312,
+            472.4293518066406,
+            215.21786499023438,
+            489.5084228515625
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "PIGEON FORGE, TN 37863 ",
+          "font": "Helvetica",
+          "size": 12.401350021362305,
+          "flags": 0,
+          "bbox": [
+            81.07898712158203,
+            486.2960205078125,
+            249.18655395507812,
+            503.337890625
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "(NEAR DIXIE STAMPEDE ",
+          "font": "Helvetica",
+          "size": 9.401000022888184,
+          "flags": 0,
+          "bbox": [
+            58.387901306152344,
+            500.79937744140625,
+            177.05349731445312,
+            513.7181396484375
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "ON ",
+          "font": "Helvetica",
+          "size": 9.380173683166504,
+          "flags": 0,
+          "bbox": [
+            177.4636993408203,
+            500.79937744140625,
+            193.44732666015625,
+            513.7181396484375
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "THE PARKWAY) ",
+          "font": "Helvetica",
+          "size": 9.401000022888184,
+          "flags": 0,
+          "bbox": [
+            194.81309509277344,
+            500.79937744140625,
+            270.6555480957031,
+            513.7181396484375
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "RSVP: ",
+          "font": "Helvetica-Bold",
+          "size": 12.401350021362305,
+          "flags": 16,
+          "bbox": [
+            29.48900032043457,
+            523.3318481445312,
+            71.26945495605469,
+            540.410888671875
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "----------------",
+          "font": "Times-Roman",
+          "size": 26.66584587097168,
+          "flags": 4,
+          "bbox": [
+            71.7874984741211,
+            523.5723266601562,
+            296.8285217285156,
+            549.1915283203125
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "CLOSED TOED SHOES ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            62.29779815673828,
+            555.747802734375,
+            147.5890350341797,
+            565.64306640625
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "ARE ",
+          "font": "Helvetica",
+          "size": 7.2201762199401855,
+          "flags": 0,
+          "bbox": [
+            147.60479736328125,
+            555.747802734375,
+            165.58547973632812,
+            565.64306640625
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "REQUIRED FOR CLIMBING ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            166.1540985107422,
+            555.747802734375,
+            266.2198486328125,
+            565.64306640625
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "PARENTS ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            59.60572814941406,
+            571.8294677734375,
+            97.16368103027344,
+            581.7247314453125
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "OR ",
+          "font": "Helvetica",
+          "size": 7.229546546936035,
+          "flags": 0,
+          "bbox": [
+            97.33660125732422,
+            571.8318481445312,
+            110.96599578857422,
+            581.7271118164062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "GUARDIANS NOT ATTENDING THE PARTY, ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            111.006103515625,
+            571.8318481445312,
+            268.70831298828125,
+            581.7271118164062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "PLEASE VISIT ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            65.11520385742188,
+            581.1941528320312,
+            119.01214599609375,
+            591.0894165039062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "TOPJUMP.COM ",
+          "font": "Helvetica-Bold",
+          "size": 7.427609920501709,
+          "flags": 16,
+          "bbox": [
+            118.99579620361328,
+            581.2301635742188,
+            182.3711395263672,
+            591.1470336914062
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "TO ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            182.58349609375,
+            581.1941528320312,
+            194.48171997070312,
+            591.0894165039062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "FILL ",
+          "font": "Helvetica",
+          "size": 7.239352226257324,
+          "flags": 0,
+          "bbox": [
+            195.423095703125,
+            581.1941528320312,
+            213.46304321289062,
+            591.0894165039062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "OUT ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            213.49249267578125,
+            581.1941528320312,
+            231.6170196533203,
+            591.0894165039062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "WAIVER ",
+          "font": "Helvetica",
+          "size": 7.215287208557129,
+          "flags": 0,
+          "bbox": [
+            231.33180236816406,
+            581.1941528320312,
+            264.02764892578125,
+            591.0894165039062
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "SO YOUR CHILD CAN ATTEND. ",
+          "font": "Helvetica",
+          "size": 7.20074987411499,
+          "flags": 0,
+          "bbox": [
+            106.7061996459961,
+            590.0763549804688,
+            221.58604431152344,
+            599.9716186523438
+          ],
+          "is_bold": false,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "HOPE ",
+          "font": "Helvetica-Bold",
+          "size": 22.700607299804688,
+          "flags": 16,
+          "bbox": [
+            33.418800354003906,
+            598.6004028320312,
+            91.41678619384766,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "To ",
+          "font": "Helvetica-Bold",
+          "size": 26.402799606323242,
+          "flags": 16,
+          "bbox": [
+            94.38670349121094,
+            598.6004028320312,
+            132.11102294921875,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "SEE ",
+          "font": "Helvetica-Bold",
+          "size": 22.501575469970703,
+          "flags": 16,
+          "bbox": [
+            130.59539794921875,
+            598.6004028320312,
+            172.27987670898438,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "Y",
+          "font": "Helvetica-Bold",
+          "size": 26.402799606323242,
+          "flags": 16,
+          "bbox": [
+            175.45379638671875,
+            598.6004028320312,
+            193.06199645996094,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "ou ",
+          "font": "Helvetica-Bold",
+          "size": 24.490650177001953,
+          "flags": 16,
+          "bbox": [
+            192.2032012939453,
+            598.6004028320312,
+            224.68392944335938,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "T",
+          "font": "Helvetica-Bold",
+          "size": 26.402799606323242,
+          "flags": 16,
+          "bbox": [
+            226.6219940185547,
+            598.6004028320312,
+            242.75184631347656,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "HERE",
+          "font": "Helvetica-Bold",
+          "size": 22.024700164794922,
+          "flags": 16,
+          "bbox": [
+            240.79150390625,
+            598.6004028320312,
+            289.8945007324219,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "! ",
+          "font": "Helvetica-Bold",
+          "size": 26.402799606323242,
+          "flags": 16,
+          "bbox": [
+            290.63970947265625,
+            598.6004028320312,
+            306.7695617675781,
+            634.962158203125
+          ],
+          "is_bold": true,
+          "is_italic": false
+        },
+        {
+          "page": 1,
+          "text": "WWW.TOPJUMP.COM ",
+          "font": "Helvetica",
+          "size": 18.025842666625977,
+          "flags": 0,
+          "bbox": [
+            93.78669738769531,
+            624.4996948242188,
+            236.11007690429688,
+            656.6593017578125
+          ],
+          "is_bold": false,
+          "is_italic": false
+        }
+      ],
+      "font_analysis": [
+        {
+          "page": 1,
+          "fonts": [
+            {
+              "font": "Helvetica",
+              "size": 12.401399612426758,
+              "count": 1,
+              "sample_text": "ADDRESS: "
+            },
+            {
+              "font": "Helvetica",
+              "size": 12.413744926452637,
+              "count": 1,
+              "sample_text": "TOPJUMP "
+            },
+            {
+              "font": "Helvetica",
+              "size": 12.401350021362305,
+              "count": 2,
+              "sample_text": "3735 "
+            },
+            {
+              "font": "Helvetica-Bold",
+              "size": 12.401350021362305,
+              "count": 2,
+              "sample_text": "PARKWAY "
+            },
+            {
+              "font": "Helvetica",
+              "size": 9.401000022888184,
+              "count": 2,
+              "sample_text": "(NEAR DIXIE STAMPEDE "
+            },
+            {
+              "font": "Helvetica",
+              "size": 9.380173683166504,
+              "count": 1,
+              "sample_text": "ON "
+            },
+            {
+              "font": "Times-Roman",
+              "size": 26.66584587097168,
+              "count": 1,
+              "sample_text": "----------------"
+            },
+            {
+              "font": "Helvetica",
+              "size": 7.20074987411499,
+              "count": 8,
+              "sample_text": "CLOSED TOED SHOES "
+            },
+            {
+              "font": "Helvetica",
+              "size": 7.2201762199401855,
+              "count": 1,
+              "sample_text": "ARE "
+            },
+            {
+              "font": "Helvetica",
+              "size": 7.229546546936035,
+              "count": 1,
+              "sample_text": "OR "
+            }
+          ]
+        }
+      ],
+      "processing_time": 0.17647290229797363
+    },
+    "pdfminer": {
+      "parser": "pdfminer",
+      "full_text": "ADDRESS: \n\nTOPJUMP \n3735 PARKWAY \nPIGEON  FORGE, TN  37863 \n(NEAR DIXIE STAMPEDE ON  THE  PARKWAY) \n\nRSVP: ----------------\n\nCLOSED TOED SHOES ARE REQUIRED FOR CLIMBING \n\nPARENTS OR GUARDIANS NOT ATTENDING THE  PARTY, \nPLEASE VISIT TOPJUMP.COM TO  FILL OUT WAIVER \nSO YOUR CHILD CAN ATTEND. \n\nHOPE  To SEE  You THERE! \nWWW.TOPJUMP.COM \n\n\f",
+      "text_containers": [
+        {
+          "page": 1,
+          "text": "ADDRESS:",
+          "bbox": [
+            32.6488,
+            225.8587583,
+            104.44306299999998,
+            238.2618583
+          ]
+        },
+        {
+          "page": 1,
+          "text": "TOPJUMP \n3735 PARKWAY \nPIGEON  FORGE, TN  37863 \n(NEAR DIXIE STAMPEDE ON  THE  PARKWAY)",
+          "bbox": [
+            58.3879,
+            173.1868239,
+            270.65551942,
+            224.0984583
+          ]
+        },
+        {
+          "page": 1,
+          "text": "RSVP: ----------------",
+          "bbox": [
+            29.489,
+            138.07755840000002,
+            296.828489,
+            159.2724583
+          ]
+        },
+        {
+          "page": 1,
+          "text": "CLOSED TOED SHOES ARE REQUIRED FOR CLIMBING",
+          "bbox": [
+            62.2978,
+            121.0594274,
+            266.21985042,
+            128.2612274
+          ]
+        },
+        {
+          "page": 1,
+          "text": "PARENTS OR GUARDIANS NOT ATTENDING THE  PARTY, \nPLEASE VISIT TOPJUMP.COM TO  FILL OUT WAIVER \nSO YOU...",
+          "bbox": [
+            59.605739700000015,
+            86.7309274,
+            268.7083288,
+            112.179608
+          ]
+        },
+        {
+          "page": 1,
+          "text": "HOPE  To SEE  You THERE! \nWWW.TOPJUMP.COM",
+          "bbox": [
+            33.4188,
+            31.5339994,
+            306.7695501,
+            80.1249545
+          ]
+        }
+      ],
+      "chars": [],
+      "processing_time": 0.011668205261230469
+    },
+    "camelot": {
+      "parser": "camelot",
+      "tables": [],
+      "processing_time": 1.390282154083252
+    }
+  }
+}

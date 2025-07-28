@@ -1,0 +1,34 @@
+# PDF Outline Extraction Tool - Dependencies
+# Adobe Hackathon "Connecting the Dots" Challenge - Round 1A
+
+# Core PDF processing
+pdfplumber==0.10.3
+pdfminer.six==20221105
+PyMuPDF==1.23.8
+camelot-py==0.11.0
+
+# Data processing and analysis
+numpy==1.24.3
+pandas==2.0.3
+
+# Text processing
+regex==2023.8.8
+
+# Multiprocessing and performance
+psutil==5.9.5
+
+# OCR dependencies
+pytesseract==0.3.10
+pdf2image==1.17.0
+Pillow==10.0.0
+
+# Development and testing
+pytest==7.4.2
+pytest-cov==4.1.0
+
+# Type checking
+mypy==1.5.1
+
+# Code formatting (optional)
+black==23.7.0
+flake8==6.0.0 
