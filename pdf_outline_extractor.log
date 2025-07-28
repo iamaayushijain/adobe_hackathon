@@ -5345,3 +5345,44 @@
 2025-07-28 23:18:16,074 - INFO - Total time: 45.65 seconds
 2025-07-28 23:18:16,074 - INFO - Average time per file: 14.31 seconds
 2025-07-28 23:18:16,074 - WARNING - Average processing time (14.31s) exceeds 10-second target
+2025-07-28 23:39:20,839 - WARNING - Using local input/output directories for development
+2025-07-28 23:39:20,839 - INFO - Starting PDF Outline Extractor
+2025-07-28 23:39:20,840 - INFO - Input directory: input
+2025-07-28 23:39:20,840 - INFO - Output directory: output
+2025-07-28 23:39:20,840 - INFO - Processing Collection 1
+2025-07-28 23:39:23,097 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-28 23:39:23,934 - INFO - Use pytorch device: cpu
+2025-07-28 23:39:24,012 - INFO -    → Parsing South of France - Cities.pdf
+2025-07-28 23:39:24,012 - INFO - Starting multi-parser extraction for: South of France - Cities.pdf
+2025-07-28 23:39:24,012 - INFO - Running parser: pdfplumber
+2025-07-28 23:39:24,465 - INFO - pdfplumber: extracted 476 text blocks in 0.45s
+2025-07-28 23:39:24,465 - INFO - Running parser: pymupdf
+2025-07-28 23:39:24,510 - INFO - pymupdf: extracted 371 text blocks in 0.04s
+2025-07-28 23:39:24,510 - INFO - Running parser: pdfminer
+2025-07-28 23:39:24,684 - INFO - pdfminer: extracted 14 text blocks in 0.17s
+2025-07-28 23:39:24,684 - INFO - Running parser: camelot
+2025-07-28 23:39:24,991 - INFO - Processing page-1
+2025-07-28 23:39:25,644 - INFO - Processing page-2
+2025-07-28 23:39:26,105 - INFO - Processing page-3
+2025-07-28 23:39:26,605 - INFO - Processing page-4
+2025-07-28 23:39:27,039 - INFO - Processing page-5
+2025-07-28 23:39:27,473 - INFO - Processing page-6
+2025-07-28 23:43:25,941 - WARNING - Using local input/output directories for development
+2025-07-28 23:43:25,941 - INFO - Starting PDF Outline Extractor
+2025-07-28 23:43:25,942 - INFO - Input directory: input
+2025-07-28 23:43:25,942 - INFO - Output directory: output
+2025-07-28 23:43:25,942 - INFO - Processing Collection 1
+2025-07-28 23:43:27,508 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-28 23:43:28,405 - INFO - Use pytorch device: cpu
+2025-07-28 23:43:28,485 - INFO -    → Parsing South of France - Cities.pdf
+2025-07-28 23:43:28,485 - INFO - Starting multi-parser extraction for: South of France - Cities.pdf
+2025-07-28 23:43:28,485 - INFO - Running parser: pdfplumber
+2025-07-28 23:43:29,550 - INFO - pdfplumber: extracted 476 text blocks in 1.06s
+2025-07-28 23:43:29,551 - INFO - Running parser: pymupdf
+2025-07-28 23:43:29,597 - INFO - pymupdf: extracted 371 text blocks in 0.05s
+2025-07-28 23:43:29,597 - INFO - Running parser: pdfminer
+2025-07-28 23:43:29,810 - INFO - pdfminer: extracted 14 text blocks in 0.21s
+2025-07-28 23:43:29,810 - INFO - Running parser: camelot
+2025-07-28 23:43:30,229 - INFO - Processing page-1
+2025-07-28 23:43:30,991 - INFO - Processing page-2
+2025-07-28 23:43:31,442 - INFO - Processing page-3

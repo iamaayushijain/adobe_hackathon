@@ -25,34 +25,34 @@ docker build -t pdf-intel .
 
 ## 🚀  Run – Outline-only (Round-1A)
 
-Put PDFs in `input/` (or bind-mount `/app/input` in Docker) and execute:
+Put PDFs in `input/` (or mount `/app/input`).  
+Execute **main2.py**:
 ```bash
-python main.py            # writes JSON to output/<file>.json
+python main2.py            # writes JSON to output/<file>.json
 ```
-Each JSON contains
+Internally uses `DocumentPipeline` to generate:
 ```json
 {
   "title": "…",
-  "outline": [ {"level":"H1","text":"…","page":1}, … ],
-  "raw_text": [ {"page":1,"text":"full page text"}, … ],
-  "tables":   [ {"page":1,"data":[[…]]}, … ]
+  "outline": [ {"level":"H1","text":"…","page":1} ],
+  "raw_text": [{"page":1,"text":"…"}],
+  "tables":   [{"page":1,"data":[["A","B"]]}]
 }
 ```
 
 ---
 
-## 🚀  Run – Persona ranking (Round-1B sample)
+## 🚀  Run – Persona ranking (Round-1B)
 
-Sample collections live in `Challenge_1b/Collection*/`.
-Simply run **the same** command:
+Round-1B uses the **main.py** orchestrator and the sample collections inside `Challenge_1b/`.
+Simply run:
 ```bash
 python main.py
 ```
-The script will automatically:
-1. Parse all collections (`Collection 1`, `2`, `3` …).
-2. Write `challenge1b_outline_only.json` inside each collection.
-3. Rank headings vs the persona/task and write
-   `challenge1b_refined_output.json` (contains top sections + refined text).
+main.py will:
+1. Iterate over every `Challenge_1b/Collection*/` folder.  
+2. Parse PDFs → `challenge1b_outline_only.json`.  
+3. Rank headings vs persona/task and write `challenge1b_refined_output.json` with top sections + refined text.
 
 ---
 
