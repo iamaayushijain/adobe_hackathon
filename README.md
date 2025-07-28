@@ -40,39 +40,6 @@ An end-to-end, CPU-only pipeline for extracting knowledge from PDFs and ranking 
 
 ---
 
-## ⚙️ Architecture Overview
-
-```mermaid
-flowchart TD
-    subgraph Extraction
-        A[PDF] -->|pdfplumber| B
-        A -->|PyMuPDF| C
-        A -->|pdfminer| D
-        A -->|Camelot| E[TABLES]
-        B & C & D --> F(Merge \n Text Blocks)
-    end
-
-    subgraph Heading-Detection
-        F --> G{Font Analysis \n + Size Clustering}
-        G --> H(Title)
-        G --> I[H1/H2/H3]
-    end
-
-    subgraph R1A_JSON
-        H & I & F & E --> J[outline_data]
-    end
-
-    subgraph Persona Ranking (R1B)
-        K[input.json] --> L(embed Persona+Task)
-        I --> M{Rank vs Task}
-        M --> N[top-K headings]
-        N --> O(select_subsentences)
-        O --> P[Refined JSON]
-    end
-```
-
----
-
 ## 🧠 Models
 
 | Model | Size | Purpose |
