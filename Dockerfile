@@ -1,40 +1,33 @@
-# PDF Outline Extractor - Docker Container
-# Adobe Hackathon "Connecting the Dots" Challenge - Round 1A
+# PDF Intelligence Dockerfile – CPU-only, offline
 
 FROM python:3.11-slim
 
-# Set working directory
-WORKDIR /app
-
-# Install system dependencies for PyMuPDF
+# --- OS deps -------------------------------------------------------------
 RUN apt-get update && apt-get install -y \
     build-essential \
-    libffi-dev \
-    libssl-dev \
+    libffi-dev libssl-dev \
+    poppler-utils \
+    tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first for better caching
-COPY requirements.txt .
+# set workdir
+WORKDIR /app
 
-# Install Python dependencies
+# copy requirements & install (cached layer)
+COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
-COPY main.py parser.py utils.py output_writer.py ./
+# copy project source
+COPY app/           ./app/
+COPY parser.py pipeline.py output_writer.py utils.py ./
+COPY main.py main2.py ./
 
-# Create input and output directories
-RUN mkdir -p /app/input /app/output
+# create runtime dirs
+RUN mkdir -p /app/input /app/output /app/output2
 
-# Set proper permissions
-RUN chmod +x main.py
-
-# Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
+ENV HF_DATASETS_OFFLINE=1
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD python -c "import sys; sys.exit(0)"
-
-# Run the application
+# default entrypoint parses Challenge-1B & /app/input
 CMD ["python", "main.py"] 
