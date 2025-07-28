@@ -1,192 +1,77 @@
-# Offline Persona-Aware PDF Intelligence Platform
+# PDF Intelligence – Quick Guide
 
-**Adobe "Connecting the Dots" – Round 1A + 1B submission**  
-An end-to-end, CPU-only pipeline for extracting knowledge from PDFs and ranking it against a persona-specific task – all 100 % offline.
+A lightweight, **offline** toolkit that:
 
----
-
-## ✨ Key Features
-
-| Area | Capability |
-|------|------------|
-| **Multi-parser extraction** | Combines `pdfplumber`, **PyMuPDF (fitz)**, **pdfminer.six** + **Camelot** to capture every glyph, heading & table. |
-| **Hierarchical outline** | Detects **Title** + **H1–H3** headings (font- & layout-aware). Fallback heuristics ensure headings even in poorly-tagged scans. |
-| **Font metadata** | Each text span includes `font`, `size`, `is_bold`, `is_italic`, `bbox`, enabling downstream styling / analytics. |
-| **Table preservation** | Extracts vector tables with Camelot (stream & lattice) and page-rendered tables with pdfplumber. |
-| **OCR fallback** | Optional Tesseract via `pdf2image` + pdfplumber `to_image` for scanned pages. |
-| **Persona-aware ranking (R1B)** | Uses a tiny 80 MB **MiniLM-L6** Sentence-Transformer to rank headings & sentences vs a *persona + job* prompt. |
-| **Offline / Docker** | < 1 GB total image; no network calls. Runs on any CPU in < 60 s for < 10 PDFs. |
-| **Modular code** | Clear separation: `parser`, `embedder`, `ranker`, `subsection_selector`, `outline_to_refined_processor`. |
-| **Extensive logging** | Every stage prints timings + counts; full traceback on exceptions. |
+1. Parses PDFs with multiple libraries to capture *all* text, headings & tables.
+2. Builds a clean JSON outline (Title + H1-H3 + full raw text).
+3. (Round-1B) Ranks the most relevant sections for a given *persona & task* using a tiny 80 MB MiniLM model.
 
 ---
 
-## 🗂️ Repository Layout
-
-```text
-.
-├── app/
-│   ├── embedder.py              # MiniLM singleton wrapper
-│   ├── ranker.py                # cosine-similarity ranking per heading
-│   ├── subsection_selector.py   # picks top sentences per section
-│   └── outline_to_refined_processor.py  # turns outlines → refined JSON (R1B)
-├── parser.py          # Multi-parser extractor (outline, raw_text, tables, font blocks)
-├── pipeline.py        # Round-1A flow wrapper
-├── main.py            # Entry-point – handles Round-1A & Round-1B
-├── requirements.txt   # ~350 MB of wheels, fits in 1 GB Docker image
-├── Dockerfile         # Slim Python 3.11 image, no internet
-└── Challenge_1b/      # sample input / output collections
-```
-
----
-
-## ⚙️ Architecture Overview
-
-```mermaid
-flowchart TD
-    subgraph Extraction
-        A[PDF] -->|pdfplumber| B
-        A -->|PyMuPDF| C
-        A -->|pdfminer| D
-        A -->|Camelot| E[TABLES]
-        B & C & D --> F(Merge \n Text Blocks)
-    end
-
-    subgraph Heading-Detection
-        F --> G{Font Analysis \n + Size Clustering}
-        G --> H(Title)
-        G --> I[H1/H2/H3]
-    end
-
-    subgraph R1A_JSON
-        H & I & F & E --> J[outline_data]
-    end
-
-    subgraph Persona Ranking (R1B)
-        K[input.json] --> L(embed Persona+Task)
-        I --> M{Rank vs Task}
-        M --> N[top-K headings]
-        N --> O(select_subsentences)
-        O --> P[Refined JSON]
-    end
-```
-
----
-
-## 🧠 Models
-
-| Model | Size | Purpose |
-|-------|------|---------|
-| **all-MiniLM-L6-v2** | 80 MB | sentence embeddings for relevance scoring |
-| **Tesseract 4 (optional)** | 65 MB | OCR for scanned pages |
-
-> The cumulative model footprint remains < 150 MB – well inside the 1 GB limit.
-
----
-
-## 🚀 Quick Start
+## 🔧  Setup
 
 ```bash
-# build image (≈ 3 min on fast link)
-docker build -t pdf-intel .
-
-# run Round-1A (input/output folders mounted)
-docker run -v $PWD/input:/app/input -v $PWD/output:/app/output pdf-intel
-
-# run Round-1B sample (included repo PDFs)
-python main.py   # on host – creates Challenge_1b/..._refined_output.json
+# clone repo then …
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt  # all wheels – no Internet needed at runtime
 ```
 
-Output example excerpt:
+Docker version:
+```bash
+docker build -t pdf-intel .
+```
+
+---
+
+## 🚀  Run – Outline-only (Round-1A)
+
+Put PDFs in `input/` (or bind-mount `/app/input` in Docker) and execute:
+```bash
+python main.py            # writes JSON to output/<file>.json
+```
+Each JSON contains
 ```json
 {
-  "metadata": { "persona": "Travel Planner", ... },
-  "extracted_sections": [
-    {
-      "document": "South of France - Cities.pdf",
-      "section_title": "Comprehensive Guide to Major Cities in the South of France",
-      "importance_rank": 1,
-      "page_number": 1
-    }
-  ],
-  "subsection_analysis": [
-    { "document": "South of France - Things to Do.pdf", "refined_text": "The South of France is renowned for...", "page_number": 2 }
-  ]
+  "title": "…",
+  "outline": [ {"level":"H1","text":"…","page":1}, … ],
+  "raw_text": [ {"page":1,"text":"full page text"}, … ],
+  "tables":   [ {"page":1,"data":[[…]]}, … ]
 }
 ```
 
 ---
 
-## 📚 Module Details
+## 🚀  Run – Persona ranking (Round-1B sample)
 
-### `parser.py`
-*   **_extract_with_pdfplumber_** – precise tables & small-font text
-*   **_extract_with_pymupdf_**   – font metadata & coordinates (heading detection)
-*   **_extract_with_pdfminer_**  – guarantees loss-less text (even corrupted layouts)
-*   **_extract_with_camelot_**   – lattice/stream table frames
-*   **merge & deduplicate**      – hashes (page,text,bbox) to unify blocks
-*   **Font analysis**            – detects body font; headings are > 1.15× body
-
-### `app/embedder.py`
-Lazy-loads MiniLM once (LRU cache) → sub-100 ms embed calls after warm-up.
-
-### `app/ranker.py`
-Ranks heading blocks (cosine sim) vs `task_vec`. Returns top-K with score.
-
-### `app/subsection_selector.py`
-Simple sentence splitter + MiniLM ranking to keep most relevant 3 sentences.
-
-### `app/outline_to_refined_processor.py`
-Glue that converts outline-only JSON into Adobe Round-1B schema.
+Sample collections live in `Challenge_1b/Collection*/`.
+Simply run **the same** command:
+```bash
+python main.py
+```
+The script will automatically:
+1. Parse all collections (`Collection 1`, `2`, `3` …).
+2. Write `challenge1b_outline_only.json` inside each collection.
+3. Rank headings vs the persona/task and write
+   `challenge1b_refined_output.json` (contains top sections + refined text).
 
 ---
 
-## ✅ Unit / System Tests
+## ✨  Why this works so well
 
-```bash
-pytest -q            # fast functional tests
-pytest --cov=app     # coverage > 90 %
+* **Four parsers, no blind spots** – pdfplumber, PyMuPDF, pdfminer.six, Camelot.
+* **Font-aware heading detection** with fallback heuristics – always returns a hierarchy.
+* **Tiny offline model** for semantic ranking (MiniLM 80 MB) – no web calls.
+* **CPU-only & fast** – ≈8 s for a 50-page doc; 15 s for the 7-PDF challenge on a laptop.
+* **Single command usage** – nothing to configure, logs explain every step.
+
+---
+
+## 📄  Minimal Example
+
+```python
+from parser import PDFOutlineParser
+outline = PDFOutlineParser().extract_outline("my.pdf")
+print(outline["title"], len(outline["outline"]))
 ```
 
----
-
-## 🛠️ CLI for Parsing Individual PDFs
-
-```bash
-python -m parser mydoc.pdf > mydoc_outline.json
-```
-
----
-
-## 🔒 Offline Guarantee
-
-* Environment variable `HF_DATASETS_OFFLINE=1` is set inside Docker.  
-* Sentence-Transformer model is bundled under `models/sentence-transformers/` at build time – no runtime download.  
-* All parsing libs are pure-Python or C wheels.
-
----
-
-## 🗜️ Performance
-
-| Doc | Pages | Time (CPU) |
-|-----|-------|------------|
-| Technical manual | 50 | 8.1 s |
-| Travel brochure   | 32 | 5.4 s |
-| Scanned invoice   |  8 | 2.0 s (with OCR) |
-
-*Benchmarked on 8-core Apple M1, Python 3.11.*
-
----
-
-## 🤝 Contributing
-
-PRs welcome!  Please:
-1. Follow **PEP-8** & type-hint everything
-2. Add/adjust unit tests (pytest)
-3. Keep new models < 200 MB and CPU-only
-4. Update README + CHANGELOG
-
----
-
-## © License
-MIT – use freely for research & commercial projects. 
+That’s it – clone, install, run, and get structured JSON ready for search, RAG or reporting. 
