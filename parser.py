@@ -145,8 +145,9 @@ class PDFOutlineParser:
         # Merge and deduplicate results
         merged_text = self._merge_extracted_texts(all_texts)
         
-        # 🔥 NEW: Extract structured outline and headings
+        # 🔥 NEW: Extract structured outline, headings, AND font blocks
         structured_data = self._create_structured_outline(pdf_path, all_texts)
+        font_blocks = structured_data.pop('font_blocks', [])
         
         # 🔥 NEW: Extract tables
         tables = self._extract_tables(pdf_path)
@@ -157,6 +158,7 @@ class PDFOutlineParser:
             'outline': structured_data.get('outline', []),
             'raw_text': [{'page': i+1, 'text': text} for i, text in enumerate(merged_text.split('\n\n'))],
             'tables': tables,
+            'text_blocks': font_blocks,  # include rich blocks with font & style info
             'parser_results': results,
             'statistics': self._generate_statistics(results),
             'quality_score': self._calculate_quality_score(results)
@@ -540,7 +542,7 @@ class PDFOutlineParser:
     def _create_structured_outline(self, pdf_path: Path, all_texts: List[ExtractedText]) -> Dict[str, Any]:
         """Create structured outline with title and H1/H2/H3 headings."""
         # Get font-enriched text blocks from PyMuPDF
-        font_blocks = []
+        font_blocks: List[Dict[str, Any]] = []
         try:
             doc = fitz.open(str(pdf_path))
             for page_num in range(len(doc)):
@@ -559,8 +561,8 @@ class PDFOutlineParser:
                                         'flags': span["flags"],
                                         'bbox': span["bbox"],
                                         'page': page_num + 1,
-                                        'is_bold': bool(span["flags"] & 2**4),
-                                        'is_italic': bool(span["flags"] & 2**1)
+                                        'is_bold': ("bold" in span["font"].lower()) or bool(span["flags"] & (1 << 6)) or bool(span["flags"] & (1 << 4)),
+                                        'is_italic': ("italic" in span["font"].lower()) or bool(span["flags"] & (1 << 1))
                                     })
             doc.close()
         except Exception as e:
@@ -582,7 +584,8 @@ class PDFOutlineParser:
         
         return {
             'title': title,
-            'outline': headings
+            'outline': headings,
+            'font_blocks': font_blocks
         }
     
     def _analyze_fonts(self, font_blocks: List[Dict]) -> Dict[str, Any]:

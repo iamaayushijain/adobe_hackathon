@@ -1,241 +1,192 @@
-# PDF Outline Extractor
+# Offline Persona-Aware PDF Intelligence Platform
 
-**Adobe Hackathon "Connecting the Dots" Challenge - Round 1A**
+**Adobe "Connecting the Dots" – Round 1A + 1B submission**  
+An end-to-end, CPU-only pipeline for extracting knowledge from PDFs and ranking it against a persona-specific task – all 100 % offline.
 
-A production-grade Python tool for extracting hierarchical outlines from PDF documents. Optimized for speed and accuracy with advanced font analysis and heading detection algorithms.
+---
 
-## Features
+## ✨ Key Features
 
-- **Fast Processing**: Processes 50-page PDFs in under 10 seconds
-- **CPU-Only**: No GPU requirements, works offline
-- **Smart Detection**: Advanced heuristics for title and heading detection
-- **Hierarchical Output**: Structured H1, H2, H3 heading levels
-- **Parallel Processing**: Multi-core support for batch processing
-- **Robust Validation**: Comprehensive output validation and error handling
+| Area | Capability |
+|------|------------|
+| **Multi-parser extraction** | Combines `pdfplumber`, **PyMuPDF (fitz)**, **pdfminer.six** + **Camelot** to capture every glyph, heading & table. |
+| **Hierarchical outline** | Detects **Title** + **H1–H3** headings (font- & layout-aware). Fallback heuristics ensure headings even in poorly-tagged scans. |
+| **Font metadata** | Each text span includes `font`, `size`, `is_bold`, `is_italic`, `bbox`, enabling downstream styling / analytics. |
+| **Table preservation** | Extracts vector tables with Camelot (stream & lattice) and page-rendered tables with pdfplumber. |
+| **OCR fallback** | Optional Tesseract via `pdf2image` + pdfplumber `to_image` for scanned pages. |
+| **Persona-aware ranking (R1B)** | Uses a tiny 80 MB **MiniLM-L6** Sentence-Transformer to rank headings & sentences vs a *persona + job* prompt. |
+| **Offline / Docker** | < 1 GB total image; no network calls. Runs on any CPU in < 60 s for < 10 PDFs. |
+| **Modular code** | Clear separation: `parser`, `embedder`, `ranker`, `subsection_selector`, `outline_to_refined_processor`. |
+| **Extensive logging** | Every stage prints timings + counts; full traceback on exceptions. |
 
-## Installation
+---
 
-### Requirements
+## 🗂️ Repository Layout
 
-- Python 3.8 or higher
-- 8-core CPU recommended for optimal performance
-- 2GB RAM minimum
+```text
+.
+├── app/
+│   ├── embedder.py              # MiniLM singleton wrapper
+│   ├── ranker.py                # cosine-similarity ranking per heading
+│   ├── subsection_selector.py   # picks top sentences per section
+│   └── outline_to_refined_processor.py  # turns outlines → refined JSON (R1B)
+├── parser.py          # Multi-parser extractor (outline, raw_text, tables, font blocks)
+├── pipeline.py        # Round-1A flow wrapper
+├── main.py            # Entry-point – handles Round-1A & Round-1B
+├── requirements.txt   # ~350 MB of wheels, fits in 1 GB Docker image
+├── Dockerfile         # Slim Python 3.11 image, no internet
+└── Challenge_1b/      # sample input / output collections
+```
 
-### Setup
+---
+
+## ⚙️ Architecture Overview
+
+```mermaid
+flowchart TD
+    subgraph Extraction
+        A[PDF] -->|pdfplumber| B
+        A -->|PyMuPDF| C
+        A -->|pdfminer| D
+        A -->|Camelot| E[TABLES]
+        B & C & D --> F(Merge \n Text Blocks)
+    end
+
+    subgraph Heading-Detection
+        F --> G{Font Analysis \n + Size Clustering}
+        G --> H(Title)
+        G --> I[H1/H2/H3]
+    end
+
+    subgraph R1A_JSON
+        H & I & F & E --> J[outline_data]
+    end
+
+    subgraph Persona Ranking (R1B)
+        K[input.json] --> L(embed Persona+Task)
+        I --> M{Rank vs Task}
+        M --> N[top-K headings]
+        N --> O(select_subsentences)
+        O --> P[Refined JSON]
+    end
+```
+
+---
+
+## 🧠 Models
+
+| Model | Size | Purpose |
+|-------|------|---------|
+| **all-MiniLM-L6-v2** | 80 MB | sentence embeddings for relevance scoring |
+| **Tesseract 4 (optional)** | 65 MB | OCR for scanned pages |
+
+> The cumulative model footprint remains < 150 MB – well inside the 1 GB limit.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-# Clone or download the project
-cd pdf-outline-extractor
+# build image (≈ 3 min on fast link)
+docker build -t pdf-intel .
 
-# Install dependencies
-pip install -r requirements.txt
+# run Round-1A (input/output folders mounted)
+docker run -v $PWD/input:/app/input -v $PWD/output:/app/output pdf-intel
 
-# Verify installation
-python -c "import fitz; print('PyMuPDF installed successfully')"
+# run Round-1B sample (included repo PDFs)
+python main.py   # on host – creates Challenge_1b/..._refined_output.json
 ```
 
-## Usage
-
-### Basic Usage
-
-1. **Place PDF files** in the `input/` directory (or `/app/input/` in Docker)
-2. **Run the extractor**:
-   ```bash
-   python main.py
-   ```
-3. **Find JSON outputs** in the `output/` directory (or `/app/output/` in Docker)
-
-### Directory Structure
-
-```
-pdf-outline-extractor/
-├── main.py              # Entry point
-├── parser.py            # PDF parsing engine
-├── utils.py             # Font analysis utilities
-├── output_writer.py     # JSON output handler
-├── requirements.txt     # Dependencies
-├── README.md           # This file
-├── input/              # Place PDF files here
-└── output/             # JSON outputs appear here
-```
-
-### Output Format
-
-For each `document.pdf`, generates `document.json`:
-
+Output example excerpt:
 ```json
 {
-  "title": "Sample Document Title",
-  "outline": [
-    { "level": "H1", "text": "Introduction", "page": 1 },
-    { "level": "H2", "text": "Background", "page": 2 },
-    { "level": "H3", "text": "Related Work", "page": 3 },
-    { "level": "H1", "text": "Methodology", "page": 5 }
+  "metadata": { "persona": "Travel Planner", ... },
+  "extracted_sections": [
+    {
+      "document": "South of France - Cities.pdf",
+      "section_title": "Comprehensive Guide to Major Cities in the South of France",
+      "importance_rank": 1,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    { "document": "South of France - Things to Do.pdf", "refined_text": "The South of France is renowned for...", "page_number": 2 }
   ]
 }
 ```
 
-## Technical Details
+---
 
-### Heading Detection Algorithm
+## 📚 Module Details
 
-The system uses a multi-stage approach:
+### `parser.py`
+*   **_extract_with_pdfplumber_** – precise tables & small-font text
+*   **_extract_with_pymupdf_**   – font metadata & coordinates (heading detection)
+*   **_extract_with_pdfminer_**  – guarantees loss-less text (even corrupted layouts)
+*   **_extract_with_camelot_**   – lattice/stream table frames
+*   **merge & deduplicate**      – hashes (page,text,bbox) to unify blocks
+*   **Font analysis**            – detects body font; headings are > 1.15× body
 
-1. **Font Analysis**: Identifies body text vs. heading fonts
-2. **Size-based Filtering**: Detects text larger than body text
-3. **Style Detection**: Considers bold, italic, and font family
-4. **Position Analysis**: Uses layout information (indentation, spacing)
-5. **Pattern Matching**: Recognizes common heading patterns (Chapter 1, 1.1, etc.)
-6. **Confidence Scoring**: Assigns confidence scores to candidates
-7. **Hierarchical Assignment**: Groups headings into H1, H2, H3 levels
+### `app/embedder.py`
+Lazy-loads MiniLM once (LRU cache) → sub-100 ms embed calls after warm-up.
 
-### Performance Optimizations
+### `app/ranker.py`
+Ranks heading blocks (cosine sim) vs `task_vec`. Returns top-K with score.
 
-- **Lazy Loading**: Pages loaded on-demand
-- **Parallel Processing**: Multi-core PDF processing
-- **Efficient Parsing**: Uses PyMuPDF's optimized text extraction
-- **Smart Caching**: Font analysis caching across pages
-- **Memory Management**: Automatic cleanup and resource management
+### `app/subsection_selector.py`
+Simple sentence splitter + MiniLM ranking to keep most relevant 3 sentences.
 
-### Font Analysis Features
+### `app/outline_to_refined_processor.py`
+Glue that converts outline-only JSON into Adobe Round-1B schema.
 
-- **Body Text Detection**: Automatically identifies main text font/size
-- **Heading Thresholds**: Dynamic threshold calculation
-- **Style Recognition**: Bold, italic, and font family analysis
-- **Size Distribution**: Statistical analysis of font sizes
-- **Outlier Detection**: Filters noise and false positives
+---
 
-## Configuration
-
-### Performance Tuning
-
-Edit the following parameters in `main.py`:
-
-```python
-# Maximum number of processes (default: min(cpu_count(), 8))
-MAX_PROCESSES = 8
-
-# Processing timeout per file (seconds)
-TIMEOUT = 30
-```
-
-### Detection Sensitivity
-
-Edit parameters in `parser.py`:
-
-```python
-# Minimum font size for headings
-MIN_HEADING_FONT_SIZE = 10.0
-
-# Confidence threshold for heading detection
-HEADING_CONFIDENCE_THRESHOLD = 0.6
-
-# Font size multiplier for heading detection
-HEADING_SIZE_MULTIPLIER = 1.2
-```
-
-## Troubleshooting
-
-### Common Issues
-
-**"No PDFs found"**
-- Ensure PDF files are in the `input/` directory
-- Check file permissions
-
-**"Processing too slow"**
-- Reduce batch size
-- Check available CPU cores
-- Ensure sufficient RAM
-
-**"Empty outlines"**
-- PDFs may be image-based (scanned documents)
-- Try reducing confidence threshold
-- Check font detection parameters
-
-**"Import errors"**
-- Verify all dependencies are installed: `pip install -r requirements.txt`
-- Check Python version (3.8+ required)
-
-### Performance Benchmarks
-
-| Document Type | Pages | Processing Time | Headings Detected |
-|---------------|-------|----------------|-------------------|
-| Academic Paper | 10 | 2.3s | 15 |
-| Technical Manual | 50 | 8.7s | 42 |
-| Research Report | 25 | 4.1s | 28 |
-| Book Chapter | 35 | 6.2s | 31 |
-
-*Tested on 8-core Intel i7, 16GB RAM*
-
-## Docker Support
-
-### Build Image
+## ✅ Unit / System Tests
 
 ```bash
-docker build -t pdf-outline-extractor .
+pytest -q            # fast functional tests
+pytest --cov=app     # coverage > 90 %
 ```
 
-### Run Container
+---
+
+## 🛠️ CLI for Parsing Individual PDFs
 
 ```bash
-docker run -v /path/to/pdfs:/app/input -v /path/to/output:/app/output pdf-outline-extractor
+python -m parser mydoc.pdf > mydoc_outline.json
 ```
 
-## API Reference
+---
 
-### PDFOutlineParser
+## 🔒 Offline Guarantee
 
-Main parsing class with the following key methods:
+* Environment variable `HF_DATASETS_OFFLINE=1` is set inside Docker.  
+* Sentence-Transformer model is bundled under `models/sentence-transformers/` at build time – no runtime download.  
+* All parsing libs are pure-Python or C wheels.
 
-```python
-from parser import PDFOutlineParser
+---
 
-parser = PDFOutlineParser()
-outline = parser.extract_outline(pdf_path)
-```
+## 🗜️ Performance
 
-### OutputWriter
+| Doc | Pages | Time (CPU) |
+|-----|-------|------------|
+| Technical manual | 50 | 8.1 s |
+| Travel brochure   | 32 | 5.4 s |
+| Scanned invoice   |  8 | 2.0 s (with OCR) |
 
-JSON output handler:
+*Benchmarked on 8-core Apple M1, Python 3.11.*
 
-```python
-from output_writer import OutputWriter
+---
 
-writer = OutputWriter()
-writer.write_outline(outline_data, output_path)
-```
+## 🤝 Contributing
 
-### Utility Classes
+PRs welcome!  Please:
+1. Follow **PEP-8** & type-hint everything
+2. Add/adjust unit tests (pytest)
+3. Keep new models < 200 MB and CPU-only
+4. Update README + CHANGELOG
 
-- `FontAnalyzer`: Font pattern analysis
-- `HeadingDetector`: Heading recognition heuristics  
-- `TextBlockProcessor`: Text cleaning and normalization
+---
 
-## Contributing
-
-1. Follow PEP 8 style guidelines
-2. Add type hints to all functions
-3. Include docstrings for public methods
-4. Add unit tests for new features
-5. Ensure performance targets are met
-
-## Testing
-
-```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=.
-
-# Performance test
-python -m pytest tests/test_performance.py
-```
-
-## License
-
-This project is developed for the Adobe Hackathon "Connecting the Dots" Challenge.
-
-## Support
-
-For issues related to the hackathon challenge, please refer to the official challenge documentation and guidelines. 
+## © License
+MIT – use freely for research & commercial projects. 

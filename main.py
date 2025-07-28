@@ -11,12 +11,16 @@ import os
 import sys
 import time
 import logging
+import re
 from pathlib import Path
 from multiprocessing import Pool, cpu_count
 from typing import List, Tuple
 import json
 import io
-
+from datetime import datetime
+from app.embedder import embed
+from app.ranker import rank_sections
+from app.subsection_selector import select_subsections
 
 from parser import PDFOutlineParser
 from output_writer import OutputWriter
@@ -49,16 +53,24 @@ def process_single_pdf(pdf_path: Path, output_dir: Path) -> Tuple[str, bool, flo
     """
     start_time = time.time()
     filename = pdf_path.name
+    logger = logging.getLogger(__name__)
     
     try:
         # Parse PDF via pipeline
         pipeline = DocumentPipeline()
         outline_data = pipeline.process(pdf_path)
-        save_to_json(
-        outline_data,
-        f"output2/{Path(pdf_path).stem}.json") # or f"output/{Path(file_path).stem}.json")
         
-        # Write JSON output
+        # Ensure output2 directory exists
+        output2_dir = Path("output2")
+        output2_dir.mkdir(exist_ok=True)
+        
+        # Save to output2 directory
+        save_to_json(
+            outline_data,
+            f"output2/{Path(pdf_path).stem}.json"
+        )
+        
+        # Write JSON output to main output directory
         output_filename = pdf_path.stem + '.json'
         output_path = output_dir / output_filename
         
@@ -66,17 +78,27 @@ def process_single_pdf(pdf_path: Path, output_dir: Path) -> Tuple[str, bool, flo
         writer.write_outline(outline_data, output_path)
         
         processing_time = time.time() - start_time
+        logger.info(f"Successfully processed {filename} in {processing_time:.2f}s")
         return filename, True, processing_time
         
     except Exception as e:
         processing_time = time.time() - start_time
-        logging.error(f"Failed to process {filename}: {str(e)}")
+        logger.error(f"Failed to process {filename}: {str(e)}")
+        import traceback
+        logger.error(f"Traceback: {traceback.format_exc()}")
         return filename, False, processing_time
 
+
 def save_to_json(data, output_path):
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+    """Save data to JSON file with proper error handling."""
+    try:
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        logging.error(f"Failed to save JSON to {output_path}: {e}")
+        raise
+
 
 def process_pdf_batch(pdf_paths: List[Path], output_dir: Path) -> List[Tuple[str, bool, float]]:
     """
@@ -151,6 +173,127 @@ def find_pdf_files(input_dir: Path) -> List[Path]:
     return sorted(pdf_files)
 
 
+def _process_collection(collection_dir: Path):
+    """Handle a single Challenge-1B collection directory."""
+    logger = logging.getLogger(__name__)
+
+    challenge_input = collection_dir / "challenge1b_input.json"
+    pdf_dir         = collection_dir / "PDFS"
+
+    if not challenge_input.exists():
+        logger.warning(f"Input JSON not found in {collection_dir.name}; skipping collection")
+        return
+
+    logger.info(f"Processing {collection_dir.name}")
+
+    with open(challenge_input, 'r', encoding='utf-8') as f:
+        challenge_json = json.load(f)
+
+    docs         = challenge_json.get('documents', [])
+    persona_role = challenge_json.get('persona', {}).get('role', 'General User')
+    task_text    = challenge_json.get('job_to_be_done', {}).get('task', 'Extract key information')
+
+    try:
+        task_vec = embed(f"{persona_role} {task_text}")
+    except Exception as e:
+        logger.warning(f"Embedding failed: {e}; continuing without vectors")
+        task_vec = None
+
+    outlines_output = []
+
+    for doc in docs:
+        fname = doc.get('filename', '')
+        if not fname:
+            continue
+
+        pdf_path = pdf_dir / fname
+        if not pdf_path.exists():
+            logger.warning(f"PDF missing: {pdf_path}")
+            continue
+
+        logger.info(f"   → Parsing {fname}")
+        parsed = PDFOutlineParser().extract_outline(pdf_path)
+
+        outline = parsed.get('outline', [])
+        if not outline:
+            outline = _heuristic_headings(parsed.get('raw_text', []))
+
+        outlines_output.append({
+            'document': fname,
+            'title': parsed.get('title', fname),
+            'outline': outline,
+            'raw_text': parsed.get('raw_text', [])
+        })
+
+    # write per-collection JSON
+    out_file = collection_dir / 'challenge1b_outline_only.json'
+    with open(out_file, 'w', encoding='utf-8') as f:
+        json.dump({
+            'input_documents': [d.get('filename') for d in docs],
+            'persona': persona_role,
+            'job_to_be_done': task_text,
+            'processing_timestamp': datetime.utcnow().isoformat(),
+            'total_documents_processed': len(outlines_output),
+            'outlines': outlines_output
+        }, f, indent=2, ensure_ascii=False)
+
+    logger.info(f"    Saved outline_only to {out_file}")
+
+
+def _heuristic_headings(raw_pages):
+    """Generate headings if none were detected."""
+    headings = []
+    for page_obj in raw_pages:
+        page = page_obj.get('page', 1)
+        for line in page_obj.get('text', '').split('\n'):
+            ls = line.strip()
+            if 3 < len(ls) < 80 and (ls.isupper() or re.match(r'^\d+\.\s', ls) or re.match(r'^[A-Z][A-Za-z\s]{0,60}$', ls)):
+                headings.append({'level': 'H1', 'text': ls, 'page': page})
+    return headings
+
+
+def process_challenge_1b():
+    """Iterate over *all* Collection folders inside Challenge_1b."""
+    base_dir = Path('Challenge_1b')
+    if not base_dir.exists():
+        logging.getLogger(__name__).info("Challenge_1b directory not found; skipping B-round processing")
+        return
+
+    for collection_dir in sorted(base_dir.glob('Collection*')):
+        if collection_dir.is_dir():
+            _process_collection(collection_dir)
+
+
+def generate_refined_output():
+    """Generate refined output (extracted_sections + subsection_analysis) for *all* Challenge-1B collections."""
+    from app.outline_to_refined_processor import OutlineToRefinedProcessor
+ 
+    logger = logging.getLogger(__name__)
+    base_dir = Path('Challenge_1b')
+ 
+    if not base_dir.exists():
+        logger.info("Challenge_1b directory not found; skipping refined output generation")
+        return
+ 
+    processor = OutlineToRefinedProcessor()
+ 
+    for collection_dir in sorted(base_dir.glob('Collection*')):
+        outline_path = collection_dir / 'challenge1b_outline_only.json'
+        refined_path = collection_dir / 'challenge1b_refined_output.json'
+ 
+        if not outline_path.exists():
+            logger.warning(f"Outline file not found: {outline_path}")
+            continue
+ 
+        try:
+            refined_output = processor.generate_refined_output(outline_path, refined_path)
+            logger.info(f"Refined output generated for {collection_dir.name}: {refined_path}")
+            logger.info(f"   Sections: {len(refined_output['extracted_sections'])} | Analyses: {len(refined_output['subsection_analysis'])}")
+        except Exception as e:
+            logger.error(f"Error refining {collection_dir.name}: {e}")
+            import traceback; logger.error(traceback.format_exc())
+
+
 def main():
     """Main application entry point."""
     logger = setup_logging()
@@ -169,6 +312,17 @@ def main():
     logger.info(f"Input directory: {input_dir}")
     logger.info(f"Output directory: {output_dir}")
     
+    # Always process Challenge 1B first if it exists
+    process_challenge_1b()
+    
+    # Generate refined output after outline processing
+    generate_refined_output()
+    
+    # Continue with regular processing if input directory exists
+    if not input_dir.exists():
+        logger.info("No regular input directory found, Challenge 1B processing complete")
+        return
+    
     # Validate directories
     if not validate_directories(input_dir, output_dir):
         logger.error("Directory validation failed")
@@ -185,7 +339,6 @@ def main():
     # Process PDFs
     start_time = time.time()
     results = process_pdf_batch(pdf_files, output_dir)
-    print(results)
     total_time = time.time() - start_time
     
     # Report results
@@ -210,4 +363,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main() 
+    main()

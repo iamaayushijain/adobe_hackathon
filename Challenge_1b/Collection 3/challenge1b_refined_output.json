@@ -1,0 +1,517 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Breakfast Ideas.pdf",
+      "Dinner Ideas - Mains_1.pdf",
+      "Dinner Ideas - Mains_2.pdf",
+      "Dinner Ideas - Mains_3.pdf",
+      "Dinner Ideas - Sides_1.pdf",
+      "Dinner Ideas - Sides_2.pdf",
+      "Dinner Ideas - Sides_3.pdf",
+      "Dinner Ideas - Sides_4.pdf",
+      "Lunch Ideas.pdf"
+    ],
+    "persona": "Food Contractor",
+    "job_to_be_done": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+    "processing_timestamp": "2025-07-28T17:47:15.111550"
+  },
+  "extracted_sections": [
+    {
+      "document": "Breakfast Ideas.pdf",
+      "section_title": "Cottage Cheese and Veggie Bowl",
+      "importance_rank": 1,
+      "page_number": 31
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "section_title": "Breakfast Tacos",
+      "importance_rank": 2,
+      "page_number": 11
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "section_title": "Breakfast Casserole",
+      "importance_rank": 3,
+      "page_number": 15
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "section_title": "Cottage Cheese and Fruit",
+      "importance_rank": 4,
+      "page_number": 25
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "section_title": "Breakfast Skillet",
+      "importance_rank": 5,
+      "page_number": 17
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "section_title": "Beef Tacos",
+      "importance_rank": 1,
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "section_title": "Pork Chops with Apples",
+      "importance_rank": 2,
+      "page_number": 29
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "section_title": "Chicken Alfredo",
+      "importance_rank": 3,
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "section_title": "Beef Bourguignon",
+      "importance_rank": 4,
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "section_title": "Meatloaf",
+      "importance_rank": 5,
+      "page_number": 25
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "section_title": "Beef and Broccoli",
+      "importance_rank": 1,
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "section_title": "Turkey Meatballs",
+      "importance_rank": 2,
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "section_title": "Grilled Cheese Sandwich",
+      "importance_rank": 3,
+      "page_number": 23
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "section_title": "Lamb Chops with Mint Sauce",
+      "importance_rank": 4,
+      "page_number": 25
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "section_title": "Sweet and Sour Pork",
+      "importance_rank": 5,
+      "page_number": 5
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "section_title": "Vegetable Lasagna",
+      "importance_rank": 1,
+      "page_number": 15
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "section_title": "Pulled Pork Sandwiches",
+      "importance_rank": 2,
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "section_title": "Honey Garlic Pork Ribs",
+      "importance_rank": 3,
+      "page_number": 11
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "section_title": "Pork Schnitzel",
+      "importance_rank": 4,
+      "page_number": 1
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "section_title": "Gnocchi with Sage Butter",
+      "importance_rank": 5,
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "section_title": "Carrot Salad",
+      "importance_rank": 1,
+      "page_number": 23
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "section_title": "Baked Beans",
+      "importance_rank": 2,
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "section_title": "Caprese Salad",
+      "importance_rank": 3,
+      "page_number": 23
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "section_title": "Bok Choy with Garlic",
+      "importance_rank": 4,
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "section_title": "Bouillabaisse",
+      "importance_rank": 5,
+      "page_number": 15
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "section_title": "Green Bean Casserole",
+      "importance_rank": 1,
+      "page_number": 27
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "section_title": "Garlic Bread",
+      "importance_rank": 2,
+      "page_number": 21
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "section_title": "Freekeh Salad",
+      "importance_rank": 3,
+      "page_number": 19
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "section_title": "Cornbread",
+      "importance_rank": 4,
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "section_title": "Greek Salad",
+      "importance_rank": 5,
+      "page_number": 27
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "section_title": "Jerk Vegetables",
+      "importance_rank": 1,
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "section_title": "Macaroni and Cheese",
+      "importance_rank": 2,
+      "page_number": 15
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "section_title": "Mashed Potatoes",
+      "importance_rank": 3,
+      "page_number": 19
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "section_title": "Johnny Cakes",
+      "importance_rank": 4,
+      "page_number": 5
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "section_title": "Hummus",
+      "importance_rank": 5,
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "section_title": "Potato Salad",
+      "importance_rank": 1,
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "section_title": "Pretzels",
+      "importance_rank": 2,
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "section_title": "Quesadillas",
+      "importance_rank": 3,
+      "page_number": 11
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "section_title": "Sopa de Tortilla",
+      "importance_rank": 4,
+      "page_number": 29
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "section_title": "Plantain Chips",
+      "importance_rank": 5,
+      "page_number": 7
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Veggie and Cheese Quesadilla",
+      "importance_rank": 1,
+      "page_number": 25
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Turkey and Avocado Sandwich",
+      "importance_rank": 2,
+      "page_number": 3
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Chicken and Mango Salad",
+      "importance_rank": 3,
+      "page_number": 25
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Turkey and Apple Sandwich",
+      "importance_rank": 4,
+      "page_number": 27
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Black Bean and Corn Salad",
+      "importance_rank": 5,
+      "page_number": 13
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Breakfast Ideas.pdf",
+      "refined_text": "Cottage Cheese and Veggie Bowl                                            \n          Ingredients:                                                              \n                                                                                    \n            •  1 cup cottage cheese                                                 \n            •  1/4 cup diced cucumber                                               \n            •  1/4 cup cherry tomatoes, halved                                      \n            •  1/4 cup diced bell pepper                                            \n            •  Salt and pepper to taste                                             \n          Instructions:                                                             \n            •  In a bowl, combine cottage cheese, cucumber, cherry tomatoes, and bell pepper. •  Serve immediately. •  Serve immediately.",
+      "page_number": 31
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "refined_text": "•  Serve with salsa. •  Serve with salsa. •  Add cheese, sausage or bacon, onions and bell pepper to the eggs.",
+      "page_number": 11
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "refined_text": "•  Add sausage or bacon and bell pepper. Breakfast Casserole                                                       \n                                                                                    \n          Ingredients:                                                              \n            •  6 large eggs                                                         \n            •  1 cup milk                                                           \n            •  1 cup shredded cheese                                                \n            •  1/2 cup cooked sausage or bacon                                      \n            •  1/2 cup diced bell pepper                                            \n                                                                                    \n            •  1/2 cup diced onion •  Sprinkle mozzarella cheese on top.",
+      "page_number": 15
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "refined_text": "Veggie Wrap                                                               \n          Ingredients:                                                              \n                                                                                    \n            •  1 large whole wheat tortilla                                         \n            •  1/4 cup hummus                                                       \n            •  1/4 cup shredded carrots                                             \n            •  1/4 cup sliced cucumber                                              \n            •  1/4 cup baby spinach                                                 \n            •  1/4 cup sliced bell pepper                                           \n          Instructions:                                                             \n                                                                                    \n            •  Spread hummus on the tortilla. •  Layer with shredded carrots, cucumber, spinach, and bell pepper. •  Slice in half and serve.",
+      "page_number": 25
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "refined_text": "•  Add optional toppings if desired. •  Add potatoes, bell pepper, and onion, and cook until tender. •  Stir in cheese, sausage or bacon, bell pepper, and onion.",
+      "page_number": 17
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "refined_text": "•  Serve chicken over cooked rice, garnished with sliced green onions. •  Sliced green onions for garnish                                      \n          Instructions:                                                             \n            •  In a bowl, mix soy sauce, mirin, sugar, sake, grated ginger, and minced garlic. •  Serve over cooked pasta.",
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "refined_text": "•  Garnish with lemon wedges and serve. Pork Chops with Apples                                                    \n                                                                                    \n          Ingredients:                                                              \n            •  4 pork chops                                                         \n            •  2 apples, sliced                                                     \n            •  1 small onion, sliced                                                \n            •  1/4 cup apple cider                                                  \n            •  1/4 cup chicken broth                                                \n            •  2 tablespoons butter                                                 \n                                                                                    \n            •  1 tablespoon olive oil                                               \n            •  1 teaspoon thyme                                                     \n            •  Salt and pepper to taste                                             \n          Instructions:                                                             \n            •  Season pork chops with salt and pepper. •  Serve warm.",
+      "page_number": 29
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "refined_text": "•  Shredded lettuce, diced tomatoes, shredded cheese, sour cream, and salsa for toppings\n          Instructions:                                                             \n            •  In a skillet, cook ground beef over medium heat until browned. •  In a skillet, cook ground beef, diced onion, and minced garlic until browned. Lasagna                                                                   \n          Ingredients:                                                              \n            •  1 pound ground beef                                                  \n            •  1 small onion, diced                                                 \n            •  2 cloves garlic, minced                                              \n                                                                                    \n            •  1 jar (24 ounces) marinara sauce                                     \n            •  1 can (15 ounces) ricotta cheese                                     \n            •  1 egg                                                                \n            •  1/4 cup grated Parmesan cheese                                       \n            •  1 teaspoon dried basil                                               \n            •  1 teaspoon dried oregano                                             \n            •  9 lasagna noodles, cooked                                            \n            •  2 cups shredded mozzarella cheese                                    \n                                                                                    \n          Instructions:                                                             \n            •  Preheat oven to 375°F (190°C).",
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "refined_text": "•  Garnish with chopped peanuts and serve. •  Add bean sprouts, cooked shrimp or chicken, and chopped green onions. Beef Bourguignon                                                          \n                                                                                    \n          Ingredients:                                                              \n            •  2 pounds beef chuck, cut into cubes                                  \n            •  1 small onion, diced                                                 \n            •  2 cloves garlic, minced                                              \n            •  1 cup red wine                                                       \n            •  2 cups beef broth                                                    \n            •  1 cup mushrooms, sliced                                              \n            •  1 cup carrots, sliced                                                \n                                                                                    \n            •  1 cup pearl onions                                                   \n            •  2 tablespoons tomato paste                                           \n            •  2 tablespoons flour                                                  \n            •  2 tablespoons butter                                                 \n            •  1 teaspoon thyme                                                     \n            •  1 bay leaf                                                           \n            •  Salt and pepper to taste                                             \n          Instructions:                                                             \n                                                                                    \n            •  Preheat oven to 350°F (175°C).",
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "refined_text": "•  Garnish with chopped cilantro and serve. •  Serve warm. Meatloaf                                                                  \n          Ingredients:",
+      "page_number": 25
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "refined_text": "Beef and Broccoli                                                         \n          Ingredients:                                                              \n            •  1 pound beef sirloin, thinly sliced                                  \n            •  2 cups broccoli florets                                              \n            •  1 small onion, diced                                                 \n            •  2 cloves garlic, minced                                              \n            •  1/4 cup soy sauce                                                    \n            •  1/4 cup beef broth                                                   \n                                                                                    \n            •  2 tablespoons oyster sauce                                           \n            •  1 tablespoon cornstarch                                              \n            •  2 tablespoons vegetable oil                                          \n            •  Cooked rice for serving                                              \n          Instructions:                                                             \n            •  In a small bowl, mix soy sauce, beef broth, oyster sauce, and cornstarch. •  Sprinkle with grated Parmesan cheese and serve. •  Serve over cooked rice.",
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "refined_text": "Turkey Meatballs                                                          \n                                                                                    \n          Ingredients:                                                              \n            •  1 pound ground turkey                                                \n            •  1 small onion, diced                                                 \n            •  2 cloves garlic, minced                                              \n            •  1/4 cup breadcrumbs                                                  \n            •  1 egg, beaten •  Serve warm. •  Serve over cooked rice.",
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "refined_text": "•  Garnish with chopped parsley and serve. Grilled Cheese Sandwich                                                   \n          Ingredients:                                                              \n            •  8 slices bread                                                       \n            •  4 slices cheddar cheese                                              \n                                                                                    \n            •  4 slices mozzarella cheese                                           \n            •  1/4 cup butter                                                       \n          Instructions:                                                             \n            •  Preheat a skillet over medium heat. •  Serve fish and chips with lemon wedges.",
+      "page_number": 23
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "refined_text": "•  Cook sandwiches in the skillet until golden brown and cheese is melted. •  Serve warm. •  Serve warm.",
+      "page_number": 25
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "refined_text": "•  1 cup shredded cheese                                                \n            •  1 teaspoon oregano                                                   \n            •  1 teaspoon basil                                                     \n            •  2 tablespoons olive oil                                              \n            •  Salt and pepper to taste                                             \n                                                                                    \n                                                                                    \n                                                                                    \n                                                                                    \n          Sweet and Sour Pork                                                       \n          Ingredients:                                                              \n            •  1 pound pork tenderloin, cubed                                       \n            •  1 bell pepper, diced                                                 \n            •  1 small onion, diced                                                 \n            •  1/2 cup pineapple chunks                                             \n                                                                                    \n            •  1/4 cup ketchup                                                      \n            •  1/4 cup rice vinegar                                                 \n            •  1/4 cup soy sauce                                                    \n            •  1/4 cup brown sugar                                                  \n            •  2 tablespoons cornstarch                                             \n            •  2 tablespoons vegetable oil                                          \n            •  Cooked rice for serving                                              \n          Instructions:                                                             \n                                                                                    \n            •  In a bowl, toss pork cubes with cornstarch. •  Serve over cooked rice. •  Return pork to the skillet and toss to coat in the sauce.",
+      "page_number": 5
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "refined_text": "•  Mix barbecue sauce, chicken broth, and brown sugar, and pour over pork. •  Place onion and garlic in a slow cooker, then add pork. •  Shred pork with forks and mix with sauce.",
+      "page_number": 15
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "refined_text": "Pulled Pork Sandwiches                                                    \n          Ingredients:                                                              \n            •  2 pounds pork shoulder                                               \n            •  1 small onion, sliced                                                \n            •  2 cloves garlic, minced •  Garnish with parsley and serve. •  Sauté onion, garlic, and mushrooms until tender.",
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "refined_text": "•  Garnish with green onions and serve. Honey Garlic Pork Ribs                                                    \n          Ingredients:                                                              \n            •  2 pounds pork ribs                                                   \n            •  1/4 cup honey                                                        \n            •  1/4 cup soy sauce                                                    \n                                                                                    \n            •  2 tablespoons rice vinegar                                           \n            •  3 cloves garlic, minced                                              \n            •  1 teaspoon grated ginger                                             \n            •  1 teaspoon paprika                                                   \n            •  Salt and pepper to taste                                             \n            •  Sliced green onions for garnish                                      \n          Instructions:                                                             \n            •  Preheat oven to 300°F (150°C). •  Season ribs with salt, pepper, and paprika, then place in a baking dish.",
+      "page_number": 11
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "refined_text": "•  Serve with lemon slices. •  Serve warm. •  Serve duck with sliced green onions and mandarin pancakes.",
+      "page_number": 1
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "refined_text": "•  Serve hot, garnished with shredded cheese and sour cream. •  Garnish with cilantro and serve with rice or naan. Gnocchi with Sage Butter                                                  \n          Ingredients:                                                              \n                                                                                    \n            •  1 pound potato gnocchi                                               \n            •  1/4 cup butter                                                       \n            •  2 cloves garlic, minced                                              \n            •  8 fresh sage leaves                                                  \n            •  1/2 cup grated Parmesan cheese                                       \n            •  Salt and pepper to taste                                             \n          Instructions:",
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "refined_text": "o  Add pineapple, tomatoes, and fish fillets, cook until fish is done. o  Garnish with chopped cilantro and serve. Carrot Salad                                                              \n            •  Ingredients:                                                         \n                 o  4 carrots                                                       \n                 o  1/4 cup raisins                                                 \n                                                                                    \n                 o  1/4 cup parsley                                                 \n                 o  1/4 cup lemon juice                                             \n                 o  1/4 cup olive oil                                               \n                 o  1 teaspoon cumin                                                \n                 o  1 teaspoon salt                                                 \n            •  Instructions:                                                        \n                 o  Grate carrots and mix with raisins and chopped parsley.",
+      "page_number": 23
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "refined_text": "o  Mix beans, onion, molasses, brown sugar, ketchup, mustard, salt, and pepper in a\n                    baking dish. Baked Beans                                                               \n                                                                                    \n            •  Ingredients:                                                         \n                 o  4 cups cooked navy beans                                        \n                 o  1 small onion                                                   \n                 o  1/2 cup molasses                                                \n                 o  1/4 cup brown sugar                                             \n                 o  1/4 cup ketchup                                                 \n                 o  1 tablespoon mustard                                            \n                 o  1 teaspoon salt                                                 \n                                                                                    \n                 o  1/2 teaspoon pepper                                             \n            •  Instructions:                                                        \n                 o  Preheat oven to 350°F (175°C). Bammy                                                                     \n            •  Ingredients:                                                         \n                 o  2 cups grated cassava                                           \n                 o  1/4 cup coconut milk                                            \n                 o  1 teaspoon salt",
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "refined_text": "o  Add pineapple, tomatoes, and fish fillets, cook until fish is done. o  Garnish with chopped cilantro and serve. Carrot Salad                                                              \n            •  Ingredients:                                                         \n                 o  4 carrots                                                       \n                 o  1/4 cup raisins                                                 \n                                                                                    \n                 o  1/4 cup parsley                                                 \n                 o  1/4 cup lemon juice                                             \n                 o  1/4 cup olive oil                                               \n                 o  1 teaspoon cumin                                                \n                 o  1 teaspoon salt                                                 \n            •  Instructions:                                                        \n                 o  Grate carrots and mix with raisins and chopped parsley.",
+      "page_number": 23
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "refined_text": "o  Add ground beef, raisins, almonds, curry powder, salt, and pepper, cook until\n                    beef is browned. Bobotie                                                                   \n            •  Ingredients:                                                         \n                 o  1 pound ground beef                                             \n                 o  1 small onion                                                   \n                 o  2 cloves garlic                                                 \n                                                                                    \n                 o  1/4 cup raisins                                                 \n                 o  1/4 cup almonds                                                 \n                 o  1 tablespoon curry powder                                       \n                 o  1 teaspoon salt                                                 \n                 o  1/2 teaspoon pepper                                             \n                 o  2 eggs                                                          \n                 o  1/2 cup milk                                                    \n                 o  1/4 cup breadcrumbs                                             \n                                                                                    \n            •  Instructions:                                                        \n                 o  Preheat oven to 350°F (175°C). o  Add cumin, coriander, turmeric, and garam masala, cook for 1 minute.",
+      "page_number": 13
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "refined_text": "o  Mix cod with mashed potatoes, diced onion, minced garlic, chopped parsley, and\n                    beaten eggs. Bouillabaisse                                                             \n            •  Ingredients:                                                         \n                                                                                    \n                 o  1 pound fish fillets                                            \n                 o  1/2 pound shrimp                                                \n                 o  1/2 pound mussels                                               \n                 o  1 small onion                                                   \n                 o  2 cloves garlic                                                 \n                 o  4 tomatoes                                                      \n                 o  4 cups fish stock                                               \n                 o  1/2 cup white wine                                              \n                                                                                    \n                 o  1 teaspoon saffron                                              \n                 o  1 teaspoon thyme                                                \n                 o  1 teaspoon salt                                                 \n                 o  1/2 teaspoon pepper                                             \n            •  Instructions:                                                        \n                 o  Sauté diced onion and minced garlic in olive oil until softened. o  Add soy sauce and cook for 2 minutes.",
+      "page_number": 15
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "refined_text": "o  Top with remaining fried onions and bake for an additional 5 minutes. o  Mix vegetables with olives and crumbled feta cheese. Green Bean Casserole                                                      \n            •  Ingredients:                                                         \n                 o  4 cups green beans                                              \n                 o  1 can cream of mushroom soup                                    \n                 o  1/2 cup milk                                                    \n                 o  1 cup fried onions                                              \n                 o  1 teaspoon salt                                                 \n                                                                                    \n                 o  1/2 teaspoon pepper                                             \n            •  Instructions:                                                        \n                 o  Preheat oven to 350°F (175°C).",
+      "page_number": 27
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "refined_text": "o  Garnish with chopped green onions and serve. o  Garnish with sesame seeds and serve warm. o  1/2 cup diced carrots                                           \n                 o  2 eggs                                                          \n                 o  2 tablespoons soy sauce                                         \n                 o  1 tablespoon sesame oil                                         \n                 o  1/4 cup chopped green onions                                    \n            •  Instructions:                                                        \n                                                                                    \n                 o  Sauté diced onion, peas, and carrots in sesame oil until softened.",
+      "page_number": 21
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "refined_text": "Freekeh Salad                                                             \n            •  Ingredients:                                                         \n                 o  1 cup freekeh                                                   \n                                                                                    \n                 o  2 cups water                                                    \n                 o  1 small onion                                                   \n                 o  1/4 cup parsley                                                 \n                 o  1/4 cup mint                                                    \n                 o  1/4 cup lemon juice                                             \n                 o  1/4 cup olive oil                                               \n                 o  1 teaspoon salt                                                 \n            •  Instructions:                                                        \n                                                                                    \n                 o  Rinse freekeh and cook in water until tender, then drain. o  Mix freekeh with sautéed onion, chopped parsley, and mint. o  Serve warm.",
+      "page_number": 19
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "refined_text": "o  Mix shredded chicken with onion, garlic, chopped parsley, and cream cheese. Croque Monsieur                                                           \n            •  Ingredients:                                                         \n                 o  8 slices bread                                                  \n                 o  4 slices ham                                                    \n                 o  1 cup grated Gruyère cheese                                     \n                 o  1/4 cup béchamel sauce o  Serve warm.",
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "refined_text": "o  Top with remaining fried onions and bake for an additional 5 minutes. o  Mix vegetables with olives and crumbled feta cheese. Green Bean Casserole                                                      \n            •  Ingredients:                                                         \n                 o  4 cups green beans                                              \n                 o  1 can cream of mushroom soup                                    \n                 o  1/2 cup milk                                                    \n                 o  1 cup fried onions                                              \n                 o  1 teaspoon salt                                                 \n                                                                                    \n                 o  1/2 teaspoon pepper                                             \n            •  Instructions:                                                        \n                 o  Preheat oven to 350°F (175°C).",
+      "page_number": 27
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "refined_text": "o  Sauté sliced beef, diced onion, julienned carrot, and bell pepper in sesame oil\n                                                                                    \n                    until cooked. o  Combine with cooked beef and vegetables. Japchae                                                                   \n            •  Ingredients:                                                         \n                 o  8 ounces sweet potato noodles                                   \n                 o  1/2 pound beef                                                  \n                 o  1 small onion                                                   \n                 o  1 carrot                                                        \n                 o  1 bell pepper                                                   \n                                                                                    \n                 o  1 cup spinach                                                   \n                 o  2 tablespoons soy sauce                                         \n                 o  1 tablespoon sesame oil                                         \n                 o  1 tablespoon sugar                                              \n                 o  1 tablespoon sesame seeds                                       \n            •  Instructions:                                                        \n                 o  Cook noodles according to package instructions, then drain.",
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "refined_text": "o  Mix beans with tomato sauce and cook for 10 minutes. o  Stir in chopped cilantro and serve warm. o  Add diced tomatoes, cumin, paprika, and salt, simmer for 10 minutes.",
+      "page_number": 15
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "refined_text": "o  Garnish with chopped green onions and serve. o  Sauté ground pork, diced onion, and minced garlic until browned. o  Add chili bean paste, soy sauce, rice wine, and sugar, cook for 2 minutes.",
+      "page_number": 19
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "refined_text": "o  Add diced tomatoes, tomato paste, thyme, curry powder, salt, and pepper, cook\n                    for 5 minutes. Jollof Rice                                                               \n            •  Ingredients:                                                         \n                 o  2 cups rice                                                     \n                 o  1 small onion                                                   \n                 o  2 cloves garlic                                                 \n                 o  4 tomatoes                                                      \n                 o  1/4 cup tomato paste                                            \n                                                                                    \n                 o  1/4 cup vegetable oil                                           \n                 o  1 teaspoon thyme                                                \n                 o  1 teaspoon curry powder                                         \n                 o  1 teaspoon salt                                                 \n                 o  1/2 teaspoon pepper                                             \n                 o  4 cups chicken broth                                            \n            •  Instructions:                                                        \n                 o  Sauté diced onion and minced garlic in vegetable oil until softened. o  1/4 cup olive oil                                               \n            •  Instructions:                                                        \n                 o  Toss vegetables with minced garlic, jerk seasoning, and olive oil.",
+      "page_number": 5
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "refined_text": "o  Sauté sliced beef, diced onion, julienned carrot, and bell pepper in sesame oil\n                                                                                    \n                    until cooked. o  Combine with cooked beef and vegetables. Japchae                                                                   \n            •  Ingredients:                                                         \n                 o  8 ounces sweet potato noodles                                   \n                 o  1/2 pound beef                                                  \n                 o  1 small onion                                                   \n                 o  1 carrot                                                        \n                 o  1 bell pepper                                                   \n                                                                                    \n                 o  1 cup spinach                                                   \n                 o  2 tablespoons soy sauce                                         \n                 o  1 tablespoon sesame oil                                         \n                 o  1 tablespoon sugar                                              \n                 o  1 tablespoon sesame seeds                                       \n            •  Instructions:                                                        \n                 o  Cook noodles according to package instructions, then drain.",
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "refined_text": "Potato Salad                                                              \n            •  Ingredients:                                                         \n                 o  4 potatoes                                                      \n                                                                                    \n                 o  2 eggs                                                          \n                 o  1 small onion                                                   \n                 o  1/2 cup mayonnaise                                              \n                 o  2 tablespoons mustard                                           \n                 o  1 tablespoon vinegar                                            \n                 o  1 teaspoon salt                                                 \n                 o  1/2 teaspoon pepper                                             \n            •  Instructions:                                                        \n                                                                                    \n                 o  Boil potatoes until tender, then dice. o  Chill for at least 1 hour before serving. o  Mix potatoes, eggs, diced onion, mayonnaise, mustard, vinegar, salt, and pepper.",
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "refined_text": "Potato Salad                                                              \n            •  Ingredients:                                                         \n                 o  4 potatoes                                                      \n                                                                                    \n                 o  2 eggs                                                          \n                 o  1 small onion                                                   \n                 o  1/2 cup mayonnaise                                              \n                 o  2 tablespoons mustard                                           \n                 o  1 tablespoon vinegar                                            \n                 o  1 teaspoon salt                                                 \n                 o  1/2 teaspoon pepper                                             \n            •  Instructions:                                                        \n                                                                                    \n                 o  Boil potatoes until tender, then dice. o  Chill for at least 1 hour before serving. o  Mix potatoes, eggs, diced onion, mayonnaise, mustard, vinegar, salt, and pepper.",
+      "page_number": 9
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "refined_text": "o  Add diced carrot, peas, cumin, coriander, turmeric, and garam masala, cook for 1\n                    minute. Quesadillas                                                               \n            •  Ingredients:                                                         \n                 o  4 flour tortillas                                               \n                 o  2 cups shredded cheese                                          \n                                                                                    \n                 o  1/2 cup diced cooked chicken (optional)                         \n                 o  1/4 cup chopped cilantro                                        \n                 o  1 tablespoon vegetable oil                                      \n            •  Instructions:                                                        \n                 o  Heat oil in a pan. Quiche Lorraine                                                           \n            •  Ingredients:                                                         \n                 o  1 pie crust                                                     \n                 o  6 slices bacon                                                  \n                 o  1 small onion                                                   \n                                                                                    \n                 o  1 cup grated Gruyère cheese                                     \n                 o  3 eggs                                                          \n                 o  1 cup heavy cream                                               \n                 o  1/2 teaspoon salt                                               \n                 o  1/4 teaspoon pepper                                             \n            •  Instructions:",
+      "page_number": 11
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "refined_text": "o  Toss shredded papaya, carrot, and sliced tomatoes with the dressing. o  Serve soup topped with tortilla strips, diced avocado, and chopped cilantro. o  Garnish with crushed peanuts and serve.",
+      "page_number": 29
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "refined_text": "o  Mix well and serve. o  4 tomatoes                                                      \n                 o  1 small onion                                                   \n                 o  1 jalapeño                                                      \n                 o  1/4 cup cilantro                                                \n                 o  1 lime                                                          \n                 o  1 teaspoon salt                                                 \n                                                                                    \n            •  Instructions:                                                        \n                 o  Dice tomatoes, onion, and jalapeño. o  Combine all ingredients in a bowl.",
+      "page_number": 7
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "refined_text": "Veggie and Cheese Quesadilla                                              \n          Ingredients:                                                              \n            •  1 whole wheat tortilla                                               \n            •  1/2 cup shredded cheese                                              \n            •  1/4 cup bell pepper, sliced                                          \n                                                                                    \n            •  1/4 cup zucchini, sliced                                             \n            •  1/4 cup red onion, sliced                                            \n          Instructions:                                                             \n            •  Lay the tortilla flat and sprinkle half of the cheese on one side. •  Add the bell pepper, zucchini, and red onion. Chicken and Mango Salad                                                   \n          Ingredients:                                                              \n            •  1 cup cooked chicken breast, diced                                   \n            •  1/2 mango, diced                                                     \n            •  1/4 cup red onion, finely chopped                                    \n            •  1/4 cup cilantro, chopped                                            \n            •  2 tablespoons olive oil                                              \n                                                                                    \n            •  1 tablespoon lime juice                                              \n            •  Salt and pepper to taste                                             \n          Instructions:                                                             \n            •  In a bowl, combine the chicken, mango, red onion, and cilantro.",
+      "page_number": 25
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "refined_text": "•  Add the chicken, lettuce, and Parmesan cheese. Turkey and Avocado Sandwich                                               \n          Ingredients:                                                              \n            •  2 slices whole grain bread                                           \n                                                                                    \n            •  4 slices turkey breast                                               \n            •  1/2 avocado, sliced                                                  \n            •  1/2 cup spinach leaves                                               \n            •  1 tablespoon mustard or mayo                                         \n          Instructions:                                                             \n            •  Spread mustard or mayo on one slice of bread. •  Layer the turkey, avocado, and spinach on top.",
+      "page_number": 3
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "refined_text": "Veggie and Cheese Quesadilla                                              \n          Ingredients:                                                              \n            •  1 whole wheat tortilla                                               \n            •  1/2 cup shredded cheese                                              \n            •  1/4 cup bell pepper, sliced                                          \n                                                                                    \n            •  1/4 cup zucchini, sliced                                             \n            •  1/4 cup red onion, sliced                                            \n          Instructions:                                                             \n            •  Lay the tortilla flat and sprinkle half of the cheese on one side. •  Add the bell pepper, zucchini, and red onion. Chicken and Mango Salad                                                   \n          Ingredients:                                                              \n            •  1 cup cooked chicken breast, diced                                   \n            •  1/2 mango, diced                                                     \n            •  1/4 cup red onion, finely chopped                                    \n            •  1/4 cup cilantro, chopped                                            \n            •  2 tablespoons olive oil                                              \n                                                                                    \n            •  1 tablespoon lime juice                                              \n            •  Salt and pepper to taste                                             \n          Instructions:                                                             \n            •  In a bowl, combine the chicken, mango, red onion, and cilantro.",
+      "page_number": 25
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "refined_text": "•  Layer the turkey, apple slices, and spinach on top. Turkey and Apple Sandwich                                                 \n          Ingredients:                                                              \n            •  2 slices whole grain bread                                           \n            •  4 slices turkey breast                                               \n            •  1/2 apple, thinly sliced                                             \n            •  1/4 cup baby spinach                                                 \n            •  1 tablespoon mustard or mayo                                         \n          Instructions:                                                             \n                                                                                    \n            •  Spread mustard or mayo on one slice of bread. Mediterranean Tuna Salad                                                  \n          Ingredients:                                                              \n            •  1 can tuna, drained                                                  \n            •  1/4 cup cherry tomatoes, halved                                      \n            •  1/4 cup cucumber, diced                                              \n            •  1/4 cup black olives, sliced                                         \n                                                                                    \n            •  1/4 cup feta cheese, crumbled                                        \n            •  2 tablespoons olive oil                                              \n            •  1 tablespoon lemon juice                                             \n            •  Salt and pepper to taste                                             \n          Instructions:                                                             \n            •  In a bowl, combine the tuna, tomatoes, cucumber, olives, and feta cheese.",
+      "page_number": 27
+    },
+    {
+      "document": "Lunch Ideas.pdf",
+      "refined_text": "Black Bean and Corn Salad                                                 \n          Ingredients:                                                              \n            •  1 can black beans, drained and rinsed                                \n            •  1 cup corn kernels (fresh or canned)                                 \n                                                                                    \n            •  1/2 cup cherry tomatoes, halved Shrimp and Avocado Salad                                                  \n          Ingredients:                                                              \n            •  1 cup cooked shrimp, peeled and deveined                             \n            •  1/2 avocado, diced                                                   \n            •  1/4 cup cherry tomatoes, halved                                      \n                                                                                    \n            •  1/4 cup red onion, finely chopped                                    \n            •  2 tablespoons olive oil                                              \n            •  1 tablespoon lemon juice                                             \n            •  Salt and pepper to taste                                             \n          Instructions:                                                             \n            •  In a bowl, combine the shrimp, avocado, tomatoes, and red onion. Chicken and Veggie Stir-Fry                                               \n          Ingredients:                                                              \n                                                                                    \n            •  1 cup cooked chicken breast, sliced                                  \n            •  1/2 cup bell pepper, sliced                                          \n            •  1/2 cup broccoli florets                                             \n            •  1/4 cup snap peas                                                    \n            •  2 tablespoons soy sauce                                              \n            •  1 tablespoon olive oil                                               \n            •  1 teaspoon sesame oil                                                \n                                                                                    \n            •  Cooked rice for serving                                              \n          Instructions:                                                             \n            •  In a large skillet, heat olive oil over medium heat.",
+      "page_number": 13
+    }
+  ]
+}
