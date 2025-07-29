@@ -5386,3 +5386,276 @@
 2025-07-28 23:43:30,229 - INFO - Processing page-1
 2025-07-28 23:43:30,991 - INFO - Processing page-2
 2025-07-28 23:43:31,442 - INFO - Processing page-3
+2025-07-29 00:18:44,433 - WARNING - Using local input/output directories for development
+2025-07-29 00:18:44,433 - INFO - Starting PDF Outline Extractor
+2025-07-29 00:18:44,433 - INFO - Input directory: input
+2025-07-29 00:18:44,433 - INFO - Output directory: output
+2025-07-29 00:18:44,433 - INFO - Processing Collection 1
+2025-07-29 00:18:45,904 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-29 00:18:46,964 - INFO - Use pytorch device: cpu
+2025-07-29 00:18:47,203 - INFO -    → Parsing South of France - Cities.pdf
+2025-07-29 00:18:47,203 - INFO - Starting multi-parser extraction for: South of France - Cities.pdf
+2025-07-29 00:18:47,203 - INFO - Running parser: pdfplumber
+2025-07-29 00:18:47,797 - INFO - pdfplumber: extracted 476 text blocks in 0.59s
+2025-07-29 00:18:47,797 - INFO - Running parser: pymupdf
+2025-07-29 00:18:47,832 - INFO - pymupdf: extracted 371 text blocks in 0.03s
+2025-07-29 00:18:47,832 - INFO - Running parser: pdfminer
+2025-07-29 00:18:47,984 - INFO - pdfminer: extracted 14 text blocks in 0.15s
+2025-07-29 00:18:47,984 - INFO - Running parser: camelot
+2025-07-29 00:18:48,303 - INFO - Processing page-1
+2025-07-29 00:18:48,850 - INFO - Processing page-2
+2025-07-29 00:18:49,283 - INFO - Processing page-3
+2025-07-29 00:18:49,744 - INFO - Processing page-4
+2025-07-29 00:18:50,170 - INFO - Processing page-5
+2025-07-29 00:18:50,614 - INFO - Processing page-6
+2025-07-29 00:18:51,094 - INFO - Processing page-7
+2025-07-29 00:18:51,780 - INFO - Processing page-8
+2025-07-29 00:18:52,242 - INFO - Processing page-9
+2025-07-29 00:18:52,682 - INFO - Processing page-10
+2025-07-29 00:18:53,118 - INFO - Processing page-11
+2025-07-29 00:18:53,548 - INFO - Processing page-12
+2025-07-29 00:18:53,979 - INFO - Processing page-13
+2025-07-29 00:18:54,401 - INFO - Processing page-14
+2025-07-29 00:18:55,064 - INFO - Processing page-1
+2025-07-29 00:18:55,087 - INFO - Processing page-2
+2025-07-29 00:18:55,110 - INFO - Processing page-3
+2025-07-29 00:18:55,124 - INFO - Processing page-4
+2025-07-29 00:18:55,143 - INFO - Processing page-5
+2025-07-29 00:18:55,157 - INFO - Processing page-6
+2025-07-29 00:18:55,175 - INFO - Processing page-7
+2025-07-29 00:18:55,205 - INFO - Processing page-8
+2025-07-29 00:18:55,232 - INFO - Processing page-9
+2025-07-29 00:18:55,310 - INFO - Processing page-10
+2025-07-29 00:18:55,335 - INFO - Processing page-11
+2025-07-29 00:18:55,361 - INFO - Processing page-12
+2025-07-29 00:18:55,387 - INFO - Processing page-13
+2025-07-29 00:18:55,403 - INFO - Processing page-14
+2025-07-29 00:18:55,412 - INFO - camelot: extracted 24 text blocks in 7.43s
+2025-07-29 00:18:55,412 - INFO - Running parser: ocr
+2025-07-29 00:18:55,414 - INFO - ocr: extracted 0 text blocks in 0.00s
+2025-07-29 00:18:55,809 - INFO - Extracted 0 headings and 0 tables
+2025-07-29 00:18:55,810 - INFO -    → Parsing South of France - Cuisine.pdf
+2025-07-29 00:18:55,810 - INFO - Starting multi-parser extraction for: South of France - Cuisine.pdf
+2025-07-29 00:18:55,810 - INFO - Running parser: pdfplumber
+2025-07-29 00:18:56,029 - INFO - pdfplumber: extracted 256 text blocks in 0.22s
+2025-07-29 00:18:56,029 - INFO - Running parser: pymupdf
+2025-07-29 00:18:56,043 - INFO - pymupdf: extracted 213 text blocks in 0.01s
+2025-07-29 00:18:56,043 - INFO - Running parser: pdfminer
+2025-07-29 00:18:56,138 - INFO - pdfminer: extracted 8 text blocks in 0.09s
+2025-07-29 00:18:56,138 - INFO - Running parser: camelot
+2025-07-29 00:18:56,292 - INFO - Processing page-1
+2025-07-29 00:18:56,715 - INFO - Processing page-2
+2025-07-29 00:18:57,147 - INFO - Processing page-3
+2025-07-29 00:18:57,708 - INFO - Processing page-4
+2025-07-29 00:18:58,147 - INFO - Processing page-5
+2025-07-29 00:18:58,588 - INFO - Processing page-6
+2025-07-29 00:18:59,014 - INFO - Processing page-7
+2025-07-29 00:18:59,438 - INFO - Processing page-8
+2025-07-29 00:19:00,039 - INFO - Processing page-1
+2025-07-29 00:19:00,061 - INFO - Processing page-2
+2025-07-29 00:19:00,086 - INFO - Processing page-3
+2025-07-29 00:19:00,115 - INFO - Processing page-4
+2025-07-29 00:19:00,144 - INFO - Processing page-5
+2025-07-29 00:19:00,175 - INFO - Processing page-6
+2025-07-29 00:19:00,192 - INFO - Processing page-7
+2025-07-29 00:19:00,200 - INFO - Processing page-8
+2025-07-29 00:19:00,205 - INFO - camelot: extracted 8 text blocks in 4.07s
+2025-07-29 00:19:00,205 - INFO - Running parser: ocr
+2025-07-29 00:19:00,205 - INFO - ocr: extracted 0 text blocks in 0.00s
+2025-07-29 00:19:00,407 - INFO - Extracted 0 headings and 0 tables
+2025-07-29 00:19:00,408 - INFO -    → Parsing South of France - History.pdf
+2025-07-29 00:19:00,408 - INFO - Starting multi-parser extraction for: South of France - History.pdf
+2025-07-29 00:19:00,408 - INFO - Running parser: pdfplumber
+2025-07-29 00:19:00,778 - INFO - pdfplumber: extracted 404 text blocks in 0.37s
+2025-07-29 00:19:00,778 - INFO - Running parser: pymupdf
+2025-07-29 00:19:00,794 - INFO - pymupdf: extracted 291 text blocks in 0.02s
+2025-07-29 00:19:00,794 - INFO - Running parser: pdfminer
+2025-07-29 00:19:00,911 - INFO - pdfminer: extracted 12 text blocks in 0.12s
+2025-07-29 00:19:00,911 - INFO - Running parser: camelot
+2025-07-29 00:19:01,135 - INFO - Processing page-1
+2025-07-29 00:19:01,559 - INFO - Processing page-2
+2025-07-29 00:19:01,982 - INFO - Processing page-3
+2025-07-29 00:19:02,401 - INFO - Processing page-4
+2025-07-29 00:19:02,825 - INFO - Processing page-5
+2025-07-29 00:19:03,241 - INFO - Processing page-6
+2025-07-29 00:19:03,655 - INFO - Processing page-7
+2025-07-29 00:19:04,072 - INFO - Processing page-8
+2025-07-29 00:19:04,485 - INFO - Processing page-9
+2025-07-29 00:19:04,905 - INFO - Processing page-10
+2025-07-29 00:19:05,352 - INFO - Processing page-11
+2025-07-29 00:19:05,766 - INFO - Processing page-12
+2025-07-29 00:19:06,390 - INFO - Processing page-1
+2025-07-29 00:19:06,408 - INFO - Processing page-2
+2025-07-29 00:19:06,429 - INFO - Processing page-3
+2025-07-29 00:19:06,450 - INFO - Processing page-4
+2025-07-29 00:19:06,470 - INFO - Processing page-5
+2025-07-29 00:19:06,489 - INFO - Processing page-6
+2025-07-29 00:19:06,508 - INFO - Processing page-7
+2025-07-29 00:19:06,528 - INFO - Processing page-8
+2025-07-29 00:19:06,549 - INFO - Processing page-9
+2025-07-29 00:19:06,567 - INFO - Processing page-10
+2025-07-29 00:19:06,585 - INFO - Processing page-11
+2025-07-29 00:19:06,597 - INFO - Processing page-12
+2025-07-29 00:19:06,602 - INFO - camelot: extracted 12 text blocks in 5.69s
+2025-07-29 00:19:06,602 - INFO - Running parser: ocr
+2025-07-29 00:19:06,603 - INFO - ocr: extracted 0 text blocks in 0.00s
+2025-07-29 00:19:06,886 - INFO - Extracted 0 headings and 0 tables
+2025-07-29 00:19:06,886 - INFO -    → Parsing South of France - Restaurants and Hotels.pdf
+2025-07-29 00:19:06,886 - INFO - Starting multi-parser extraction for: South of France - Restaurants and Hotels.pdf
+2025-07-29 00:19:06,887 - INFO - Running parser: pdfplumber
+2025-07-29 00:19:07,255 - INFO - pdfplumber: extracted 480 text blocks in 0.37s
+2025-07-29 00:19:07,255 - INFO - Running parser: pymupdf
+2025-07-29 00:19:07,275 - INFO - pymupdf: extracted 381 text blocks in 0.02s
+2025-07-29 00:19:07,276 - INFO - Running parser: pdfminer
+2025-07-29 00:19:07,429 - INFO - pdfminer: extracted 13 text blocks in 0.15s
+2025-07-29 00:19:07,429 - INFO - Running parser: camelot
+2025-07-29 00:19:07,682 - INFO - Processing page-1
+2025-07-29 00:19:08,096 - INFO - Processing page-2
+2025-07-29 00:19:08,548 - INFO - Processing page-3
+2025-07-29 00:19:08,979 - INFO - Processing page-4
+2025-07-29 00:19:09,391 - INFO - Processing page-5
+2025-07-29 00:19:09,842 - INFO - Processing page-6
+2025-07-29 00:19:10,274 - INFO - Processing page-7
+2025-07-29 00:19:10,700 - INFO - Processing page-8
+2025-07-29 00:19:11,132 - INFO - Processing page-9
+2025-07-29 00:19:11,588 - INFO - Processing page-10
+2025-07-29 00:19:12,036 - INFO - Processing page-11
+2025-07-29 00:19:12,490 - INFO - Processing page-12
+2025-07-29 00:19:12,907 - INFO - Processing page-13
+2025-07-29 00:19:13,327 - INFO - Processing page-14
+2025-07-29 00:19:14,155 - INFO - Processing page-1
+2025-07-29 00:19:14,175 - INFO - Processing page-2
+2025-07-29 11:04:20,481 - WARNING - Using local input/output directories for development
+2025-07-29 11:04:20,482 - INFO - Starting PDF Outline Extractor
+2025-07-29 11:04:20,482 - INFO - Input directory: input
+2025-07-29 11:04:20,482 - INFO - Output directory: output
+2025-07-29 11:04:20,482 - INFO - Processing Collection 1
+2025-07-29 11:04:22,080 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-29 11:04:22,979 - INFO - Use pytorch device: cpu
+2025-07-29 11:04:23,051 - INFO -    → Parsing South of France - Cities.pdf
+2025-07-29 11:04:23,051 - INFO - Starting multi-parser extraction for: South of France - Cities.pdf
+2025-07-29 11:04:23,051 - INFO - Running parser: pdfplumber
+2025-07-29 11:04:23,409 - INFO - pdfplumber: extracted 476 text blocks in 0.36s
+2025-07-29 11:04:23,409 - INFO - Running parser: pymupdf
+2025-07-29 11:04:23,445 - INFO - pymupdf: extracted 371 text blocks in 0.04s
+2025-07-29 11:04:23,445 - INFO - Running parser: pdfminer
+2025-07-29 11:04:23,589 - INFO - pdfminer: extracted 14 text blocks in 0.14s
+2025-07-29 11:04:23,589 - INFO - Running parser: camelot
+2025-07-29 11:04:23,854 - INFO - Processing page-1
+2025-07-29 11:04:24,442 - INFO - Processing page-2
+2025-07-29 11:04:24,862 - INFO - Processing page-3
+2025-07-29 11:04:25,262 - INFO - Processing page-4
+2025-07-29 11:04:25,667 - INFO - Processing page-5
+2025-07-29 11:04:26,075 - INFO - Processing page-6
+2025-07-29 11:04:26,477 - INFO - Processing page-7
+2025-07-29 11:04:26,893 - INFO - Processing page-8
+2025-07-29 11:04:27,308 - INFO - Processing page-9
+2025-07-29 11:04:27,725 - INFO - Processing page-10
+2025-07-29 11:04:28,144 - INFO - Processing page-11
+2025-07-29 11:04:28,564 - INFO - Processing page-12
+2025-07-29 11:04:28,982 - INFO - Processing page-13
+2025-07-29 11:04:29,393 - INFO - Processing page-14
+2025-07-29 11:04:30,052 - INFO - Processing page-1
+2025-07-29 11:04:30,069 - INFO - Processing page-2
+2025-07-29 11:04:30,091 - INFO - Processing page-3
+2025-07-29 11:04:30,104 - INFO - Processing page-4
+2025-07-29 11:04:30,123 - INFO - Processing page-5
+2025-07-29 11:04:30,136 - INFO - Processing page-6
+2025-07-29 11:04:30,154 - INFO - Processing page-7
+2025-07-29 11:04:30,182 - INFO - Processing page-8
+2025-07-29 11:04:30,208 - INFO - Processing page-9
+2025-07-29 11:04:30,234 - INFO - Processing page-10
+2025-07-29 11:04:30,258 - INFO - Processing page-11
+2025-07-29 11:04:30,283 - INFO - Processing page-12
+2025-07-29 11:04:30,308 - INFO - Processing page-13
+2025-07-29 11:04:30,324 - INFO - Processing page-14
+2025-07-29 11:04:30,331 - INFO - camelot: extracted 24 text blocks in 6.74s
+2025-07-29 11:04:30,331 - INFO - Running parser: ocr
+2025-07-29 11:04:30,332 - INFO - ocr: extracted 0 text blocks in 0.00s
+2025-07-29 11:04:30,692 - INFO - Extracted 0 headings and 0 tables
+2025-07-29 11:04:30,693 - INFO -    → Parsing South of France - Cuisine.pdf
+2025-07-29 11:04:30,693 - INFO - Starting multi-parser extraction for: South of France - Cuisine.pdf
+2025-07-29 11:04:30,693 - INFO - Running parser: pdfplumber
+2025-07-29 11:04:30,875 - INFO - pdfplumber: extracted 256 text blocks in 0.18s
+2025-07-29 11:04:30,875 - INFO - Running parser: pymupdf
+2025-07-29 11:04:30,887 - INFO - pymupdf: extracted 213 text blocks in 0.01s
+2025-07-29 11:04:30,887 - INFO - Running parser: pdfminer
+2025-07-29 11:04:30,980 - INFO - pdfminer: extracted 8 text blocks in 0.09s
+2025-07-29 11:04:30,981 - INFO - Running parser: camelot
+2025-07-29 11:04:31,133 - INFO - Processing page-1
+2025-07-29 11:04:31,544 - INFO - Processing page-2
+2025-07-29 11:04:32,002 - INFO - Processing page-3
+2025-07-29 11:04:32,534 - INFO - Processing page-4
+2025-07-29 11:04:32,959 - INFO - Processing page-5
+2025-07-29 11:04:33,379 - INFO - Processing page-6
+2025-07-29 11:04:33,785 - INFO - Processing page-7
+2025-07-29 11:04:34,183 - INFO - Processing page-8
+2025-07-29 11:04:34,722 - INFO - Processing page-1
+2025-07-29 11:04:34,742 - INFO - Processing page-2
+2025-07-29 11:04:34,766 - INFO - Processing page-3
+2025-07-29 11:04:34,795 - INFO - Processing page-4
+2025-07-29 11:04:34,824 - INFO - Processing page-5
+2025-07-29 11:04:34,854 - INFO - Processing page-6
+2025-07-29 11:04:34,871 - INFO - Processing page-7
+2025-07-29 11:04:34,880 - INFO - Processing page-8
+2025-07-29 11:04:34,883 - INFO - camelot: extracted 8 text blocks in 3.90s
+2025-07-29 11:04:34,883 - INFO - Running parser: ocr
+2025-07-29 11:04:34,884 - INFO - ocr: extracted 0 text blocks in 0.00s
+2025-07-29 12:21:44,137 - WARNING - Using local input/output directories for development
+2025-07-29 12:21:44,138 - INFO - Starting PDF Outline Extractor
+2025-07-29 12:21:44,138 - INFO - Input directory: input
+2025-07-29 12:21:44,138 - INFO - Output directory: output
+2025-07-29 12:21:44,138 - INFO - Processing Collection 1
+2025-07-29 12:21:45,605 - INFO - Load pretrained SentenceTransformer: /app/models/all-MiniLM-L6-v2
+2025-07-29 12:21:45,605 - WARNING - Embedding failed: Path /app/models/all-MiniLM-L6-v2 not found; continuing without vectors
+2025-07-29 12:21:45,605 - INFO -    → Parsing South of France - Cities.pdf
+2025-07-29 12:21:45,605 - INFO - Starting multi-parser extraction for: South of France - Cities.pdf
+2025-07-29 12:21:45,605 - INFO - Running parser: pdfplumber
+2025-07-29 12:21:45,931 - INFO - pdfplumber: extracted 476 text blocks in 0.33s
+2025-07-29 12:21:45,931 - INFO - Running parser: pymupdf
+2025-07-29 12:21:45,961 - INFO - pymupdf: extracted 371 text blocks in 0.03s
+2025-07-29 12:21:45,961 - INFO - Running parser: pdfminer
+2025-07-29 12:21:46,105 - INFO - pdfminer: extracted 14 text blocks in 0.14s
+2025-07-29 12:21:46,105 - INFO - Running parser: camelot
+2025-07-29 12:21:46,369 - INFO - Processing page-1
+2025-07-29 12:21:46,996 - INFO - Processing page-2
+2025-07-29 12:21:47,426 - INFO - Processing page-3
+2025-07-29 12:21:47,842 - INFO - Processing page-4
+2025-07-29 12:21:48,250 - INFO - Processing page-5
+2025-07-29 12:21:48,648 - INFO - Processing page-6
+2025-07-29 12:21:49,049 - INFO - Processing page-7
+2025-07-29 12:21:49,506 - INFO - Processing page-8
+2025-07-29 12:21:49,995 - INFO - Processing page-9
+2025-07-29 12:21:50,412 - INFO - Processing page-10
+2025-07-29 12:21:50,826 - INFO - Processing page-11
+2025-07-29 12:21:51,279 - INFO - Processing page-12
+2025-07-29 12:21:51,690 - INFO - Processing page-13
+2025-07-29 12:21:52,093 - INFO - Processing page-14
+2025-07-29 12:21:52,861 - INFO - Processing page-1
+2025-07-29 12:21:52,881 - INFO - Processing page-2
+2025-07-29 12:21:52,902 - INFO - Processing page-3
+2025-07-29 12:21:52,916 - INFO - Processing page-4
+2025-07-29 12:21:52,934 - INFO - Processing page-5
+2025-07-29 12:21:52,958 - INFO - Processing page-6
+2025-07-29 12:21:52,980 - INFO - Processing page-7
+2025-07-29 12:21:53,016 - INFO - Processing page-8
+2025-07-29 12:21:53,043 - INFO - Processing page-9
+2025-07-29 12:21:53,069 - INFO - Processing page-10
+2025-07-29 12:21:53,093 - INFO - Processing page-11
+2025-07-29 12:21:53,117 - INFO - Processing page-12
+2025-07-29 12:21:53,142 - INFO - Processing page-13
+2025-07-29 12:21:53,158 - INFO - Processing page-14
+2025-07-29 12:21:53,165 - INFO - camelot: extracted 24 text blocks in 7.06s
+2025-07-29 12:21:53,165 - INFO - Running parser: ocr
+2025-07-29 12:21:53,166 - INFO - ocr: extracted 0 text blocks in 0.00s
+2025-07-29 12:21:53,471 - INFO - Extracted 0 headings and 0 tables
+2025-07-29 12:21:53,471 - INFO -    → Parsing South of France - Cuisine.pdf
+2025-07-29 12:21:53,471 - INFO - Starting multi-parser extraction for: South of France - Cuisine.pdf
+2025-07-29 12:21:53,471 - INFO - Running parser: pdfplumber
+2025-07-29 12:21:53,653 - INFO - pdfplumber: extracted 256 text blocks in 0.18s
+2025-07-29 12:21:53,653 - INFO - Running parser: pymupdf
+2025-07-29 12:21:53,665 - INFO - pymupdf: extracted 213 text blocks in 0.01s
+2025-07-29 12:21:53,665 - INFO - Running parser: pdfminer
+2025-07-29 12:21:53,757 - INFO - pdfminer: extracted 8 text blocks in 0.09s
+2025-07-29 12:21:53,757 - INFO - Running parser: camelot
+2025-07-29 12:21:53,908 - INFO - Processing page-1

@@ -11,7 +11,7 @@ from typing import List
 import numpy as np
 
 
-MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+MODEL_NAME = "/app/models/all-MiniLM-L6-v2"
 
 
 @lru_cache(maxsize=1)

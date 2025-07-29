@@ -178,7 +178,17 @@ def _process_collection(collection_dir: Path):
     logger = logging.getLogger(__name__)
 
     challenge_input = collection_dir / "challenge1b_input.json"
-    pdf_dir         = collection_dir / "PDFS"
+    # Handle case-sensitive filesystems (Linux containers) – try common variants
+    pdf_dir = None
+    for dir_candidate in ("PDFs", "PDFS", "pdfs"):
+        candidate_path = collection_dir / dir_candidate
+        if candidate_path.exists():
+            pdf_dir = candidate_path
+            break
+
+    if pdf_dir is None:
+        logger.warning(f"No PDF directory found inside {collection_dir}. Expected one of: PDFs/, PDFS/, pdfs/")
+        return
 
     if not challenge_input.exists():
         logger.warning(f"Input JSON not found in {collection_dir.name}; skipping collection")
