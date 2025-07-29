@@ -54,6 +54,40 @@ main.py will:
 2. Parse PDFs → `challenge1b_outline_only.json`.  
 3. Rank headings vs persona/task and write `challenge1b_refined_output.json` with top sections + refined text.
 
+### 🐳  Docker – Round-1B
+
+The sample input PDFs for Round-1B live in the repo at `Challenge_1b/` – each *Collection* folder already contains the required documents and metadata JSON.
+
+Build the container (BuildKit disabled for deterministic output):
+
+```bash
+DOCKER_BUILDKIT=0 docker build -f Dockerfile.main -t pdf-intel-main .
+```
+
+Run it while mounting the models, input/output and Challenge-1B collections:
+
+```bash
+docker run --rm \
+  -e MODEL_PATH=/app/models/all-MiniLM-L6-v2 \
+  -e TOKENIZERS_PARALLELISM=false \
+  -e OCR_ENABLED=0 \
+  -v $PWD/models:/app/models \
+  -v $PWD/input:/app/input \
+  -v $PWD/output:/app/output \
+  -v $PWD/Challenge_1b:/app/Challenge_1b \
+  pdf-intel-main
+```
+
+After the container finishes, each collection folder will contain a freshly generated
+`challenge1b_refined_output.json`, e.g.:
+
+```
+Challenge_1b/Collection 1/challenge1b_refined_output.json
+Challenge_1b/Collection 2/challenge1b_refined_output.json
+Challenge_1b/Collection 3/challenge1b_refined_output.json
+```
+These files include the ranked sections and refined subsection analyses for every PDF in the collection.
+
 ---
 
 ## ✨  Why this works so well

@@ -1,5 +1,4 @@
 # Dockerfile.main2
-
 FROM python:3.11-slim
 
 RUN apt-get update && apt-get install -y \
@@ -10,11 +9,11 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements2.txt ./
+RUN pip install --no-cache-dir -r requirements2.txt
 
 COPY . .
 
 RUN mkdir -p /app/input /app/output /app/output2
 
-CMD ["python", "main2.py"]
+CMD ["python", "main2.py"] 
