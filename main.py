@@ -269,7 +269,12 @@ def process_challenge_1b():
         logging.getLogger(__name__).info("Challenge_1b directory not found; skipping B-round processing")
         return
 
-    for collection_dir in sorted(base_dir.glob('Collection*')):
+    collections = list(base_dir.glob('Collection*'))
+    if not collections:
+        logging.getLogger(__name__).info("No collections found in Challenge_1b; skipping B-round processing")
+        return
+
+    for collection_dir in collections:
         if collection_dir.is_dir():
             _process_collection(collection_dir)
 
@@ -308,30 +313,19 @@ def main():
     """Main application entry point."""
     logger = setup_logging()
     
-    # Define input and output directories
+    # Define input and output directories - only these will be volumes
     input_dir = Path('/app/input')
     output_dir = Path('/app/output')
-    
-    # For development, fall back to local directories if /app doesn't exist
-    if not input_dir.exists():
-        input_dir = Path('./input')
-        output_dir = Path('./output')
-        logger.warning("Using local input/output directories for development")
     
     logger.info("Starting PDF Outline Extractor")
     logger.info(f"Input directory: {input_dir}")
     logger.info(f"Output directory: {output_dir}")
     
-    # Always process Challenge 1B first if it exists
+    # Process Challenge 1B first if it exists (baked into image)
     process_challenge_1b()
     
     # Generate refined output after outline processing
     generate_refined_output()
-    
-    # Continue with regular processing if input directory exists
-    if not input_dir.exists():
-        logger.info("No regular input directory found, Challenge 1B processing complete")
-        return
     
     # Validate directories
     if not validate_directories(input_dir, output_dir):
@@ -342,6 +336,8 @@ def main():
     pdf_files = find_pdf_files(input_dir)
     if not pdf_files:
         logger.warning("No PDF files found in input directory")
+        # Don't exit here - Challenge 1B processing might have been successful
+        logger.info("Processing complete - no additional PDFs to process")
         return
     
     logger.info(f"Found {len(pdf_files)} PDF files to process")
@@ -370,7 +366,6 @@ def main():
     
     if failed > 0:
         sys.exit(1)
-
 
 if __name__ == "__main__":
     main()
