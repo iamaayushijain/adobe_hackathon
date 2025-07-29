@@ -12,6 +12,7 @@ import logging
 import os
 import sys
 import time
+import json
 from pathlib import Path
 from multiprocessing import Pool, cpu_count
 from typing import List, Tuple
@@ -37,21 +38,44 @@ LOGGER = logging.getLogger(__name__)
 # Helpers
 ###############################################################################
 
+def save_to_json(data, output_path):
+    """Save data to JSON file with proper error handling."""
+    try:
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        LOGGER.error(f"Failed to save JSON to {output_path}: {e}")
+        raise
+
+
 def _save_output(data: dict, out_path: Path):
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
-        import json
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
 def _process_single(pdf_path: Path, out_dir: Path) -> Tuple[str, bool, float]:
     start = time.time()
     try:
-        parsed = DocumentPipeline().process(pdf_path)
-        out_file = out_dir / f"{pdf_path.stem}.json"
-        OutputWriter().write_outline(parsed, out_file)
+        outline_data = DocumentPipeline().process(pdf_path)
+        
+        # Ensure output2 directory exists
+        output2_dir = Path("output")
+        output2_dir.mkdir(exist_ok=True)
+        
+        # Save to output2 directory
+        save_to_json(
+            outline_data,
+            f"output/{pdf_path.stem}.json"
+        )
+        
+        # Save to main output directory
+        # out_file = out_dir / f"{pdf_path.stem}.json"
+        # OutputWriter().write_outline(outline_data, out_file)
+        
         elapsed = time.time() - start
-        LOGGER.info(f"✔ Parsed {pdf_path.name} in {elapsed:.2f}s → {out_file}")
+        LOGGER.info(f"✔ Parsed {pdf_path.name} in {elapsed:.2f}s → {out_file} & output2/{pdf_path.stem}.json")
         return pdf_path.name, True, elapsed
     except Exception as exc:
         elapsed = time.time() - start

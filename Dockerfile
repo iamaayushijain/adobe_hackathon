@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 COPY requirements2.txt ./
-RUN pip install --no-cache-dir -r requirements2.txt
+RUN pip install --no-cache-dir --default-timeout=100 --retries 5 -r requirements2.txt
 
 COPY . .
 
