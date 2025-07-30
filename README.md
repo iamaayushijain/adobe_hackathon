@@ -6,6 +6,10 @@ A lightweight, **offline** toolkit that:
 2. Builds a clean JSON outline (Title + H1-H3 + full raw text).
 3. (Round-1B) Ranks the most relevant sections for a given _persona & task_ using a tiny 80 MB MiniLM model.
 
+## 📽️ Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/0_dlGD0t930/0.jpg)](https://youtu.be/0_dlGD0t930)
+
 ---
 
 ## 🔧 Setup
